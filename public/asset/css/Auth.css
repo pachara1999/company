@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ebebeb;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    min-height: 500px;
+
+}
+
+.img-left {
+    width: 45%;
+    background: url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80") center;
+    background-size: cover;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+input[type='email'],
+input[type='text'],
+input[type='password'],
+.select-auth {
+    border-radius: 100px;
+    border: 1;
+    background: #ffffff;
+}
+
+input[type='button'] {
+    border-radius: 100px;
+}

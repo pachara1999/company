@@ -1,0 +1,9 @@
+
+*.json
+#writable
+#writable/*
+vendor/.DS_Store
+app/.DS_Store
+public/.DS_Store
+# public/uploads
+public/asset/img
