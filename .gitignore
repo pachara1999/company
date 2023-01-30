@@ -1,7 +1,7 @@
 
 *.json
 #writable
-#writable/*
+writable/*
 vendor/.DS_Store
 app/.DS_Store
 public/.DS_Store

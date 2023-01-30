@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Auth\Controllers;
+namespace Modules\Home\Controllers;
 
 use App\Controllers\BaseController;
 
-class Auth extends BaseController
+class Home extends BaseController
 {
     public function index()
     {
