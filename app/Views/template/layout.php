@@ -8,7 +8,7 @@
   <!-- <link rel="apple-touch-icon" sizes="76x76" href="../asset/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../asset/img/favicon.png"> -->
   <title>
-    ระบบจัดการสโมสรฟุตบอล(อคาเดมี่)
+    จัดการหน้าเว็บ
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -31,87 +31,45 @@
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
-  <div class="h-25 bg-secondary position-absolute w-100" style="background-image: url('https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80'); background-position-y: 50%;"></div>
+  <div class="h-25 bg-secondary position-absolute bg-info w-100"></div>
   <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href="<?php echo base_url('dashboard/'); ?>">
+      <a class="navbar-brand m-0" href="<?php echo base_url('admin/'); ?>">
         <img src="<?php echo base_url('public/asset/img/logo.png'); ?>" class="navbar-brand-img h-100">
-        <span class="ms-1 font-weight-bold">ระบบจัดการสโมสรฟุตบอล</span>
+        <span class="ms-1 font-weight-bold">ระบบจัดการหน้าเว็บ</span>
       </a>
     </div>
     <hr class="horizontal dark mt-0">
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Hi, <?php echo $session->get('name') ?></h6>
+          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Hi, <?php echo $session->get('username') ?></h6>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'dashboard' ? 'active' : '' ?>" href="<?php echo base_url('dashboard/'); ?>">
-            <i class="fa-solid fa-chart-pie text-warning"></i>
-            <span class="nav-link-text ms-1">หน้าแรก</span>
+          <a class="nav-link <?= uri_string() == 'admin' ? 'active' : '' ?>" href="<?php echo base_url('admin/'); ?>">
+            <i class="fa-solid fa-house-chimney text-primary"></i>
+            <span class="nav-link-text ms-1">คอนเทนท์</span>
           </a>
         </li>
-        <?php if ($session->get('role_permiss.view_academy') == 1) { ?>
-          <li class="nav-item">
-            <a class="nav-link <?= uri_string() == 'academy' ? 'active' : '' ?>" href="<?php echo base_url('academy/'); ?>">
-              <i class="fa-solid fa-school text-warning"></i>
-              <span class="nav-link-text ms-1">สโมสร (อคาเดมี่)</span>
-            </a>
-          </li>
-        <?php } ?>
-        <!-- <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'activity' ? 'active' : '' ?>" href="">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">กิจกรรม</span>
+        <li class="nav-item">
+          <a class="nav-link <?= uri_string() == 'employee' ? 'active' : '' ?>" href="<?php echo base_url('employee/'); ?>">
+            <i class="fa-solid fa-people-group text-primary"></i>
+            <span class="nav-link-text ms-1">พนักงาน</span>
           </a>
-        </li> -->
-        <?php if ($session->get('role_permiss.view_member') == 1) { ?>
-          <li class="nav-item">
-            <a class="nav-link <?= uri_string() == 'member' ? 'active' : '' ?>" href="<?php echo base_url('member/'); ?>">
-              <i class="fa-sharp fa-solid fa-users text-warning"></i>
-              <span class="nav-link-text ms-1">สมาชิก</span>
-            </a>
-          </li>
-        <?php } ?>
-        <?php if ($session->get('role_permiss.view_player') == 1) { ?>
-          <li class="nav-item">
-            <a class="nav-link <?= uri_string() == 'player' ? 'active' : '' ?>" href="<?php echo base_url('player/'); ?>">
-              <i class="fa-solid fa-futbol text-warning"></i>
-              <span class="nav-link-text ms-1">นักเตะ</span>
-            </a>
-          </li>
-        <?php } ?>
-        <?php if ($session->get('role_permiss.view_payment') == 1) { ?>
-          <li class="nav-item">
-            <a class="nav-link <?= uri_string() == 'cost' ? 'active' : '' ?>" href="<?php echo base_url('cost/'); ?>">
-              <i class="fa-solid fa-money-check-dollar text-warning"></i>
-              <span class="nav-link-text ms-1">การเงิน</span>
-            </a>
-          </li>
-        <?php } ?>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= uri_string() == 'news' ? 'active' : '' ?>" href="<?php echo base_url('news/'); ?>">
+            <i class="fa-sharp fa-solid fa-newspaper text-primary"></i>
+            <span class="nav-link-text ms-1">ข่าวสาร</span>
+          </a>
+        </li>
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">ระบบ</h6>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'profile' ? 'active' : '' ?>" href="">
-            <i class="fa-sharp fa-solid fa-address-card text-warning"></i>
-            <span class="nav-link-text ms-1">โปรไฟล์</span>
-          </a>
-        </li>
-        <?php if ($session->get('role_permiss.view_role') == 1) { ?>
-          <li class="nav-item">
-            <a class="nav-link <?= uri_string() == 'role' ? 'active' : '' ?>" href="<?php echo base_url("role/"); ?>">
-              <i class="fa-solid fa-pen-ruler text-warning"></i>
-              <span class="nav-link-text ms-1">สิทธิผู้ใช้งาน</span>
-            </a>
-          </li>
-        <?php } ?>
-        <li class="nav-item">
-          <a class="nav-link " href="<?php echo base_url('/logout'); ?>">
-            <i class="fa-solid fa-right-from-bracket text-warning"></i>
+          <a class="nav-link " href="<?php echo base_url('auth/logout'); ?>">
+            <i class="fa-solid fa-right-from-bracket"></i>
             <span class="nav-link-text ms-1">ออกจากระบบ</span>
           </a>
         </li>
@@ -206,7 +164,7 @@
   <!-- data table -->
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.13.1/r-2.4.0/sc-2.0.7/sl-1.5.0/datatables.min.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="<?php echo base_url('public/asset/js/argon-dashboard.min.js?v='.date('Y-m-d')) ?>"></script>
+  <script src="<?php echo base_url('public/asset/js/argon-dashboard.min.js?v=' . date('Y-m-d')) ?>"></script>
   <?php $this->renderSection('scripts'); ?>
 </body>
 

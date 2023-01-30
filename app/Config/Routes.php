@@ -36,6 +36,10 @@ $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($
     $routes->post('loginAuth', 'Auth::loginAuth');
     $routes->get('logout', 'Auth::logout');
 });
+// Admin
+$routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' => 'authGuard'], function ($routes) {
+    $routes->get('/', 'Admin::index');
+});
 
 /*
  * --------------------------------------------------------------------

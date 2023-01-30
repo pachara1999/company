@@ -36,7 +36,7 @@ class Auth extends BaseController
                 ];
 
                 $session->set($ses_data);
-                return redirect()->to(base_url('/'));
+                return redirect()->to(base_url('admin/'));
             } else {
                 $session->setFlashdata('msg', 'คุณกรอกรหัสผ่านผิด');
                 return redirect()->to('login');
