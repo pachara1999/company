@@ -11,4 +11,8 @@ class Admin extends BaseController
         return view('Modules\Admin\Views\index');
     }
 
+    // menu bar 
+    public function menu_bar(){
+        return view('Modules\Admin\Views\menubar\index');
+    }
 }

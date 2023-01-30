@@ -39,6 +39,8 @@ $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($
 // Admin
 $routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' => 'authGuard'], function ($routes) {
     $routes->get('/', 'Admin::index');
+
+    $routes->get('menu-bar', 'Admin::menu_bar');
 });
 
 /*

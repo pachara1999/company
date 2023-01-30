@@ -8,6 +8,9 @@
             <div class="col-md-12">
                 <h4>จัดการคอนเทนท์</h4>
             </div>
+            <div class="col-md-12">
+                <a href="<?php echo base_url('admin/menu-bar');?>" class="btn btn-warning">จัดการเมนู</a>
+            </div>
         </div>
     </div>
 </div>
