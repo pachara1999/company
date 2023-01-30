@@ -29,6 +29,14 @@ $routes->get('/about', 'Home::about');
 $routes->get('/team', 'Home::team');
 
 
+// Auth Routes
+$routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {
+    // $routes->get('add', 'Auth::add');
+    $routes->get('login', 'Auth::signin');
+    $routes->post('loginAuth', 'Auth::loginAuth');
+    $routes->get('logout', 'Auth::logout');
+});
+
 /*
  * --------------------------------------------------------------------
  * Route Definitions
