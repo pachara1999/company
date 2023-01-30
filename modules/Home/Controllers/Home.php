@@ -10,4 +10,12 @@ class Home extends BaseController
     {
         return view('Modules\Home\Views\index');
     }
+    public function about()
+    {
+        return view('Modules\Home\Views\about');
+    }
+    public function team()
+    {
+        return view('Modules\Home\Views\team');
+    }
 }

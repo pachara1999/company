@@ -25,6 +25,8 @@ $routes->setAutoRoute(true);
 
 // Authen Routes
 $routes->get('/', 'Home::index');
+$routes->get('/about', 'Home::about');
+$routes->get('/team', 'Home::team');
 
 
 /*
@@ -53,4 +55,3 @@ $routes->get('/', 'Home::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
-
