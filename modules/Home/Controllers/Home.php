@@ -18,4 +18,16 @@ class Home extends BaseController
     {
         return view('Modules\Home\Views\team');
     }
+    public function portfolio()
+    {
+        return view('Modules\Home\Views\portfolio');
+    }
+    public function news()
+    {
+        return view('Modules\Home\Views\new');
+    }
+    public function contact()
+    {
+        return view('Modules\Home\Views\contact');
+    }
 }

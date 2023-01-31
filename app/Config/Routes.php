@@ -27,7 +27,9 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/about', 'Home::about');
 $routes->get('/team', 'Home::team');
-
+$routes->get('/portfolio', 'Home::portfolio');
+$routes->get('/new', 'Home::news');
+$routes->get('/contact', 'Home::contact');
 
 // Auth Routes
 $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {

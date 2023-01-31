@@ -3,3 +3,73 @@
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
 }
+.setImgSection1 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 84px;
+    font-weight: bold;
+    color: green;
+}
+
+.setImgSectio2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 84px;
+    font-weight: bold;
+    color: green;
+}
+
+.setImgSectio3 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 20px;
+    width: 100%;
+    font-weight: bold;
+    color: black
+}
+
+.setImgSectio4 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 84px;
+    font-weight: bold;
+    color: green;
+}
+.setimg {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.setPositionIMG img{
+    width: 80%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+}
+
+.setPositionIMGnew img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+}
+.text-sectionTwo {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+.form-select{
+    border: 0;
+}
