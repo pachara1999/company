@@ -23,9 +23,6 @@
   <!-- CSS Files -->
   <link id="pagestyle" href="<?php echo base_url('public/asset/css/argon-dashboard.css?v=2.0.4') ?>" rel="stylesheet" />
 
-  <!-- thailand js -->
-  <link rel="stylesheet" href="<?php echo base_url('public/asset/jquery.Thailand.js/dist/jquery.Thailand.min.css'); ?>">
-
   <!-- Data tables -->
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.13.1/r-2.4.0/sc-2.0.7/sl-1.5.0/datatables.min.css" />
 </head>
@@ -53,7 +50,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'employee' ? 'active' : '' ?>" href="<?php echo base_url('employee/'); ?>">
+          <a class="nav-link <?= uri_string() == 'employee' ? 'active' : '' ?>" href="<?php echo base_url('admin/employee/'); ?>">
             <i class="fa-solid fa-people-group text-primary"></i>
             <span class="nav-link-text ms-1">พนักงาน</span>
           </a>
@@ -149,6 +146,9 @@
   <script src="<?php echo base_url('public/asset/js/plugins/smooth-scrollbar.min.js') ?>"></script>
   <script src="<?php echo base_url('public/asset/js/plugins/chartjs.min.js') ?>"></script>
 
+  <!-- CK Editor -->
+  <script src="https://cdn.ckeditor.com/4.20.1/standard/ckeditor.js"></script>
+
   <!-- Sweet Alert 2 -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -156,11 +156,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
 
-  <!-- Thailand Js -->
-  <!-- <script type="text/javascript" src="<?php echo base_url('public/asset/jquery.Thailand.js/dependencies/JQL.min.js'); ?>"></script> -->
-  <script type="text/javascript" src="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dependencies/JQL.min.js"></script>
-  <script type="text/javascript" src="<?php echo base_url('public/asset/jquery.Thailand.js/dependencies/typeahead.bundle.js'); ?>"></script>
-  <script type="text/javascript" src="<?php echo base_url('public/asset/jquery.Thailand.js/dist/jquery.Thailand.min.js'); ?>"></script>
   <!-- data table -->
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.13.1/r-2.4.0/sc-2.0.7/sl-1.5.0/datatables.min.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
