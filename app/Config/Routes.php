@@ -30,6 +30,22 @@ $routes->get('/team', 'Home::team');
 $routes->get('/portfolio', 'Home::portfolio');
 $routes->get('/new', 'Home::news');
 $routes->get('/contact', 'Home::contact');
+
+
+// Auth Routes
+$routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {
+    // $routes->get('add', 'Auth::add');
+    $routes->get('login', 'Auth::signin');
+    $routes->post('loginAuth', 'Auth::loginAuth');
+    $routes->get('logout', 'Auth::logout');
+});
+// Admin
+$routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' => 'authGuard'], function ($routes) {
+    $routes->get('/', 'Admin::index');
+
+    $routes->get('menu-bar', 'Admin::menu_bar');
+});
+
 /*
  * --------------------------------------------------------------------
  * Route Definitions

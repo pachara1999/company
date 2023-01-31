@@ -8,7 +8,7 @@
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="<?php echo base_url('public/asset/css/Auth.css'); ?>" rel="stylesheet">
-    <title>Login</title>
+    <title>เข้าสู่ระบบ</title>
 </head>
 
 <body>
@@ -17,13 +17,13 @@
             <div class="img-left d-md-flex d-none">
             </div>
             <div class="card-body d-flex flex-column justify-content-center">
-                <h4 class="title text-center mt-4 pb-3">ระบบจัดการสโมสรฟุตบอล (อคาเดมี่)</h4>
+                <h4 class="title text-center mt-4 pb-3">เข้าสู่ระบบ</h4>
                 <?php if (session()->getFlashdata('msg')) : ?>
                     <div class="alert alert-warning">
                         <?= session()->getFlashdata('msg') ?>
                     </div>
                 <?php endif; ?>
-                <form id="signin_form" action="<?php echo base_url('loginAuth'); ?>" method="post" class='col-sm-10 col-12 mx-auto'>
+                <form id="signin_form" action="<?php echo base_url('/auth/loginAuth'); ?>" method="post" class='col-sm-10 col-12 mx-auto'>
                     <div class='form-group '>
                         <input type="text" name="username" class="form-control" placeholder='ชื่อผู้ใช้งาน'>
                     </div>
@@ -31,8 +31,7 @@
                         <input type="password" name="password" class="form-control" placeholder='รหัสผ่าน'>
                     </div>
                     <div class='text-center'>
-                        <input type="submit" class="btn  btn-outline-success w-100 col-md-6" value='เข้าสู่ระบบ'>
-                        <a href="<?php echo base_url('/register'); ?>" class="m-auto">สมัครสมาชิก</a>
+                        <input type="submit" class="btn btn-outline-success w-100 col-md-6" value='เข้าสู่ระบบ'>
                     </div>
                 </form>
             </div>
