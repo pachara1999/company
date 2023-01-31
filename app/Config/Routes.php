@@ -31,7 +31,6 @@ $routes->get('/portfolio', 'Home::portfolio');
 $routes->get('/new', 'Home::news');
 $routes->get('/contact', 'Home::contact');
 
-
 // Auth Routes
 $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {
     // $routes->get('add', 'Auth::add');
@@ -44,6 +43,13 @@ $routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' =
     $routes->get('/', 'Admin::index');
 
     $routes->get('menu-bar', 'Admin::menu_bar');
+
+    // employee
+    $routes->get('employee', 'Employee::index');
+    $routes->get('employee/manage', 'Employee::manage');
+    $routes->get('employee/manage/(:any)', 'Employee::manage/$1');
+    $routes->post('employee/save', 'Employee::save');
+    $routes->post('employee/delete', 'Employee::deleteEmployee');
 });
 
 /*
