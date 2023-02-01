@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-lg-6 py-3 col-sm-12">
                     <label for="">Lastname</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Lastname">
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Lastname">
                 </div>
                 <div class="col-lg-12 py-3 col-sm-12">
                     <label for="inputAddress">Address</label>
