@@ -25,7 +25,7 @@
         }
     </style>
 
-    <nav class="navbar navbar-dark navbar-expand-sm bg-dark px-2">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-2">
         <div class="container">
             <a href="/" class="navbar-brand">
                 <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1452196668201-5EIWFKPJRM1JG0NEHJ3S/HQC+logo+clear.png?format=1500w" alt="" width="170px" height="80px">
@@ -35,34 +35,34 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item text-md-center text-sm-center">
                         <a href="<?php echo base_url('/home') ?>" class="nav-link text-while">
                             HOME
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-md-center text-sm-center">
                         <a href="<?php echo base_url('/about') ?>" class="nav-link  text-while">
                             ABOUT US
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-md-center text-sm-center">
                         <a href="<?php echo base_url('/team') ?>" class="nav-link  text-while">
                             TEAM
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-md-center text-sm-center">
                         <a href="<?php echo base_url('/portfolio') ?>" class="nav-link  text-while ">
                             PORTFOLIO
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-md-center text-sm-center">
                         <a href="<?php echo base_url('/new') ?>" class="nav-link  text-while ">
                             NEWS & INSIGHTS
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-md-center text-sm-center">
                         <a href="<?php echo base_url('/contact') ?>" class="nav-link  text-while ">
-                            NEWS & INSIGHTS
+                            CONTACT
                         </a>
                     </li>
                 </ul>

@@ -18,6 +18,10 @@ class Home extends BaseController
     {
         return view('Modules\Home\Views\team');
     }
+    public function profireteam()
+    {
+        return view('Modules\Home\Views\profireteam');
+    }
     public function portfolio()
     {
         return view('Modules\Home\Views\portfolio');
