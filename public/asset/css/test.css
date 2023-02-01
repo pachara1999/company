@@ -56,15 +56,18 @@
     width: 80%;
     aspect-ratio: 3/2;
     object-fit: contain;
-    /* mix-blend-mode: color-burn; */
 }
-
 .setPositionIMGnew img{
     width: 100%;
     aspect-ratio: 3/2;
     object-fit: contain;
-    /* mix-blend-mode: color-burn; */
 }
+.setPositionIMGnewpic img{
+    width: 120%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
 .text-sectionTwo {
     padding-left: 100px;
     padding-right: 100px;
@@ -73,3 +76,4 @@
 .form-select{
     border: 0;
 }
+
