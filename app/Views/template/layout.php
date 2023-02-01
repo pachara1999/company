@@ -62,7 +62,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'news' ? 'active' : '' ?>" href="<?php echo base_url('news/'); ?>">
+          <a class="nav-link <?= uri_string() == 'news' ? 'active' : '' ?>" href="<?php echo base_url('admin/news/'); ?>">
             <i class="fa-sharp fa-solid fa-newspaper text-primary"></i>
             <span class="nav-link-text ms-1">ข่าวสาร</span>
           </a>

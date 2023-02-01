@@ -4,6 +4,7 @@ namespace Modules\Home\Controllers;
 
 use App\Controllers\BaseController;
 use Modules\Admin\Models\EmployeeModel;
+use Modules\Admin\Models\PortfolioModel;
 
 class Home extends BaseController
 {
@@ -30,7 +31,9 @@ class Home extends BaseController
     }
     public function portfolio()
     {
-        return view('Modules\Home\Views\portfolio');
+        $PortfolioModel = new PortfolioModel;
+        $data['portfolios'] = $PortfolioModel->getPortfolio();
+        return view('Modules\Home\Views\portfolio', $data);
     }
     public function news()
     {
