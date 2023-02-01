@@ -6,7 +6,7 @@
 
 <div>
     <div class="setimg container-fluid">
-        <img src="https://img2.thaipng.com/20180729/blb/kisspng-desktop-wallpaper-display-resolution-high-definiti-falling-gold-5b5dc207e293e7.6449503615328711759281.jpg" alt="" width="100%" height="650px" class="img-fluid">
+        <img src="https://img2.thaipng.com/20180729/blb/kisspng-desktop-wallpaper-display-resolution-high-definiti-falling-gold-5b5dc207e293e7.6449503615328711759281.jpg" alt="" width="100%" height="650px">
         <div class="setImgSection1">HealthQuest</div>
         <h4 class="setImgSectio3">
             PROVIDING GROWTH CAPITAL TO COMPANIES TRANSFORMING HEALTHCARE
@@ -38,7 +38,7 @@
 
 </div>
 <div class="setimg container-fluid py-4">
-    <img src="https://img2.thaipng.com/20180729/blb/kisspng-desktop-wallpaper-display-resolution-high-definiti-falling-gold-5b5dc207e293e7.6449503615328711759281.jpg" alt="" width="100%" height="228px" class="img-fluid">
+    <img src="https://img2.thaipng.com/20180729/blb/kisspng-desktop-wallpaper-display-resolution-high-definiti-falling-gold-5b5dc207e293e7.6449503615328711759281.jpg" alt="" width="100%" height="228px">
     <div class="setImgSectio2">Our Focus</div>
 </div>
 <div class="container text-center">
