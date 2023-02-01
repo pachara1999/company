@@ -4,6 +4,7 @@ namespace Modules\Home\Controllers;
 
 use App\Controllers\BaseController;
 use Modules\Admin\Models\EmployeeModel;
+
 class Home extends BaseController
 {
     public function index()
@@ -34,6 +35,10 @@ class Home extends BaseController
     public function news()
     {
         return view('Modules\Home\Views\new');
+    }
+    public function newsdetel()
+    {
+        return view('Modules\Home\Views\newsdetel');
     }
     public function contact()
     {

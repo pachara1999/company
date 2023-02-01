@@ -27,7 +27,7 @@
 
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-2">
         <div class="container">
-            <a href="/" class="navbar-brand">
+            <a href="<?php echo base_url('/home') ?>" class="navbar-brand">
                 <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1452196668201-5EIWFKPJRM1JG0NEHJ3S/HQC+logo+clear.png?format=1500w" alt="" width="170px" height="80px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

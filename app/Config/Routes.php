@@ -31,7 +31,7 @@ $routes->get('/portfolio', 'Home::portfolio');
 $routes->get('/new', 'Home::news');
 $routes->get('/contact', 'Home::contact');
 $routes->get('/profireteam/(:any)', 'Home::profireteam/$1');
-
+$routes->get('/newsdetel', 'Home::newsdetel');
 // Auth Routes
 $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {
     // $routes->get('add', 'Auth::add');
