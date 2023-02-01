@@ -59,6 +59,10 @@ $routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' =
     $routes->post('portfolio/delete', 'Portfolio::deletePortfolio');
     // News
     $routes->get('news', 'News::index');
+    $routes->get('news/manage', 'News::manage');
+    $routes->get('news/manage/(:any)', 'News::manage/$1');
+    $routes->post('news/save', 'News::save');
+    $routes->post('news/deleteNews', 'News::delete_new');
 
     // News Category
     $routes->get('news/manage-category', 'News::category_index');

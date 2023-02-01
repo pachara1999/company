@@ -14,7 +14,7 @@
                     <a href="<?php echo base_url('admin/news/manage-category'); ?>" class="btn btn-primary m-2">
                         จัดการประเภทข่าวสาร
                     </a>
-                    <a href="<?php echo base_url('admin/news/add-news'); ?>" class="btn btn-info m-2">
+                    <a href="<?php echo base_url('admin/news/manage'); ?>" class="btn btn-info m-2">
                         เพิ่มข่าวสาร
                     </a>
                 </div>
@@ -32,7 +32,24 @@
                             </tr>
                         </thead>
                         <tbody>
-                            
+                            <?php foreach ($data as $key => $row) { ?>
+                                <tr>
+                                    <td><?= $key + 1 ?></td>
+                                    <td><?= $row['year'] ?></td>
+                                    <td><?= $row['cateName'] ?></td>
+                                    <td><?= $row['title'] ?></td>
+                                    <td>
+                                        <a type="button" class="btn btn-link text-warning text-gradient px-3 mb-0" href="<?php echo base_url('admin/news/manage/' . $row['id']); ?>">
+                                            <i class="fa-regular fa-pen-to-square" aria-hidden="true"></i>
+                                            แก้ไข
+                                        </a>
+                                        <button class="btn btn-link text-danger text-gradient px-3 mb-0" onclick="DeleteNews('<?= $row['id'] ?>')">
+                                            <i class="fa fa-trash me-2" aria-hidden="true"></i>
+                                            ลบ
+                                        </button>
+                                    </td>
+                                </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
@@ -63,5 +80,40 @@
             }
         });
     });
+
+    function DeleteNews(id) {
+        Swal.fire({
+            title: 'คุณต้องการลบข้อมูล?',
+            text: "คุณต้องการลบข้อมูลข่าวสารใช่หรือไม่!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonText: 'ยกเลิก',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'ลบ'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                ).then(() => {
+                    $.ajax({
+                        method: 'POST',
+                        url: "<?php echo base_url('admin/news/deleteNews'); ?>",
+                        data: {
+                            id: id
+                        },
+                        success: function(res) {
+                            console.log(res);
+                            if (res.status == 'success') {
+                                window.location.reload();
+                            }
+                        }
+                    })
+                });
+            }
+        })
+    }
 </script>
 <?php $this->endSection() ?>
