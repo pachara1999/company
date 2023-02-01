@@ -3,7 +3,7 @@
 namespace Modules\Home\Controllers;
 
 use App\Controllers\BaseController;
-
+use Modules\Admin\Models\EmployeeModel;
 class Home extends BaseController
 {
     public function index()
@@ -16,11 +16,16 @@ class Home extends BaseController
     }
     public function team()
     {
-        return view('Modules\Home\Views\team');
+        $EmployeeModel = new EmployeeModel;
+        $data['employees'] = $EmployeeModel->getEmployee();
+        return view('Modules\Home\Views\team', $data);
     }
-    public function profireteam()
+    public function profireteam($id)
     {
-        return view('Modules\Home\Views\profireteam');
+        $EmployeeModel = new EmployeeModel;
+        $data['employees'] = $EmployeeModel->getEmployee();
+        $data['employee'] = $EmployeeModel->getEmployee($id);
+        return view('Modules\Home\Views\profireteam', $data);
     }
     public function portfolio()
     {

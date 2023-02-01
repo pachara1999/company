@@ -30,7 +30,7 @@ $routes->get('/team', 'Home::team');
 $routes->get('/portfolio', 'Home::portfolio');
 $routes->get('/new', 'Home::news');
 $routes->get('/contact', 'Home::contact');
-$routes->get('/profireteam', 'Home::profireteam');
+$routes->get('/profireteam/(:any)', 'Home::profireteam/$1');
 
 // Auth Routes
 $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {

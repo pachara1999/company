@@ -33,6 +33,19 @@
 
     <!-- Card Section2 -->
     <div class="row">
+        <?php foreach ($employees as $employee) { ?>
+            <div class="col-2 text-center px-2 col-sm-6 col-md-3 col-lg-2 ">
+                <a href="<?php echo base_url('profireteam/'.$employee['id']); ?>" class="text-decoration-none text-dark">
+                    <img src="<?php echo base_url('public/asset/img/employee/' . $employee['image_path']); ?>" alt="" width="170px" height="170px">
+                    <h4 class="text-center" style="font-size: 20px;">
+                        <?= $employee['name'] ?>
+                    </h4>
+                    <p class="text-center" style="font-size: 13px;">
+                        <?= $employee['position'] ?>
+                    </p>
+                </a>
+            </div>
+        <?php } ?>
         <div class="col-2 text-center px-2 col-sm-6 col-md-3 col-lg-2 ">
             <a href="#" class="text-decoration-none text-dark">
                 <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1670344696774-3E2QYTMKQ4JR2R3QDOSZ/Garheng.jpg?format=300w" alt="" width="170px" height="170px">
