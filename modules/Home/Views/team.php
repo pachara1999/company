@@ -48,10 +48,10 @@
             <a href="#" class="text-decoration-none text-dark">
                 <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1670344715283-AZY518I3VFMQDIFSYMH3/Randy.jpg?format=500w" alt="" width="170px" height="170px">
                 <h4 class="text-center" style="font-size: 20px;">
-                    Garheng Kong
+                    Randy Scott
                 </h4>
                 <p class="text-center" style="font-size: 13px;">
-                    Managing Partner
+                    Randy Scott
                 </p>
             </a>
         </div>
@@ -59,10 +59,10 @@
             <a href="#" class="text-decoration-none text-dark">
                 <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1670344752320-ZEE842TH2NIUO3GDL95K/Todd.jpg?format=500w" alt="" width="170px" height="170px">
                 <h4 class="text-center" style="font-size: 20px;">
-                    Garheng Kong
+                    Todd Creech
                 </h4>
                 <p class="text-center" style="font-size: 13px;">
-                    Managing Partner
+                    Partner
                 </p>
             </a>
         </div>
@@ -70,10 +70,10 @@
             <a href="#" class="text-decoration-none text-dark">
                 <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1670344771759-QZT1BJ41EOGB3KQF0G5L/Anthony.jpg?format=500w" alt="" width="170px" height="170px">
                 <h4 class="text-center" style="font-size: 20px;">
-                    Garheng Kong
+                    Anthony Williams
                 </h4>
                 <p class="text-center" style="font-size: 13px;">
-                    Managing Partner
+                    Partner
                 </p>
             </a>
         </div>
@@ -81,10 +81,10 @@
             <a href="#" class="text-decoration-none text-dark">
                 <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1670344789455-9TRAIBSC5RHBO2LQV445/David.jpg?format=500w" alt="" width="170px" height="170px">
                 <h4 class="text-center" style="font-size: 20px;">
-                    Garheng Kong
+                    David Kabakoff
                 </h4>
                 <p class="text-center" style="font-size: 13px;">
-                    Managing Partner
+                    Senior Partner
                 </p>
             </a>
         </div>
@@ -92,10 +92,10 @@
             <a href="#" class="text-decoration-none text-dark">
                 <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1670345310336-RPYQNS1N0LKKJGMP0K8O/Sharath_updated.png?format=500w" alt="" width="170px" height="170px">
                 <h4 class="text-center" style="font-size: 20px;">
-                    Garheng Kong
+                    Sharath Reddy
                 </h4>
                 <p class="text-center" style="font-size: 13px;">
-                    Managing Partner
+                    Partner - Platform & Research
                 </p>
             </a>
         </div>
@@ -166,7 +166,7 @@
             </a>
         </div>
 
-        <div class="col-2 text-center px-2 col-sm-6 col-md-3 col-lg-2">
+        <div class="col-2 text- center px-2 col-sm-6 col-md-3 col-lg-2">
             <a href="#" class="text-decoration-none text-dark">
                 <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1670344919372-XWPXHCQGQQDNND8B0TLY/Manfred.jpg?format=500w" alt="" width="170px" height="170px">
                 <h4 class="text-center" style="font-size: 20px;">

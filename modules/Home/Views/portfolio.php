@@ -12,16 +12,24 @@
     </div>
     <div class="row">
         <div class="setPositionIMG col-3 text-center py-1 col-lg-3 col-sm-12 col-md-6">
-            <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1569875808725-6IPKN6TBT3DOMW1BXS92/AJAX-III.jpg?format=750w" alt="">
+            <a href="#">
+                <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1569875808725-6IPKN6TBT3DOMW1BXS92/AJAX-III.jpg?format=750w" alt="">
+            </a>
         </div>
         <div class="setPositionIMG col-3 text-center py-1 col-lg-3 col-sm-12 col-md-6">
-            <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1569875808725-6IPKN6TBT3DOMW1BXS92/AJAX-III.jpg?format=750w" alt="">
+            <a href="">
+                <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1569875808725-6IPKN6TBT3DOMW1BXS92/AJAX-III.jpg?format=750w" alt="">
+            </a>
         </div>
         <div class="setPositionIMG col-3 text-center py-1 col-lg-3 col-sm-12 col-md-6">
-            <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562144518169-CZZ1LQBHKIUPMPEONZ6G/alcresta-therapeutics.jpg?format=750w" alt="">
+            <a href="">
+                <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562144518169-CZZ1LQBHKIUPMPEONZ6G/alcresta-therapeutics.jpg?format=750w" alt="">
+            </a>
         </div>
         <div class="setPositionIMG col-3 text-center py-1 col-lg-3 col-sm-12 col-md-6">
-            <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1625755179019-3ITCOO3X0YNZ8ALZOBOE/83bar--llc_owler_20210122_091104_original.png?format=750w" alt="">
+            <a href="">
+                <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1625755179019-3ITCOO3X0YNZ8ALZOBOE/83bar--llc_owler_20210122_091104_original.png?format=750w" alt="">
+            </a>
         </div>
         <div class="setPositionIMG col-3 text-center py-1 col-lg-3 col-sm-12 col-md-6">
             <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1585064430036-5M3JSS6TPH74QXM4IBPL/Castle-Biosciences-2019.png?format=750w" alt="">
