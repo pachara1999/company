@@ -30,7 +30,7 @@ $routes->get('/team', 'Home::team');
 $routes->get('/portfolio', 'Home::portfolio');
 $routes->get('/new', 'Home::news');
 $routes->get('/contact', 'Home::contact');
-$routes->get('/profireteam', 'Home::profireteam');
+$routes->get('/profireteam/(:any)', 'Home::profireteam/$1');
 
 // Auth Routes
 $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {
@@ -51,6 +51,12 @@ $routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' =
     $routes->get('employee/manage/(:any)', 'Employee::manage/$1');
     $routes->post('employee/save', 'Employee::save');
     $routes->post('employee/delete', 'Employee::deleteEmployee');
+    // portfolio
+    $routes->get('portfolio', 'Portfolio::index');
+    $routes->get('portfolio/manage', 'Portfolio::manage');
+    $routes->get('portfolio/manage/(:any)', 'Portfolio::manage/$1');
+    $routes->post('portfolio/save', 'Portfolio::save');
+    $routes->post('portfolio/delete', 'Portfolio::deletePortfolio');
 });
 
 /*

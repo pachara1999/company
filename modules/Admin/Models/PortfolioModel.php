@@ -2,14 +2,14 @@
 namespace Modules\Admin\Models;
 
 use CodeIgniter\Model;
-class EmployeeModel extends Model
+class PortfolioModel extends Model
 {
     protected $table      = "";
     protected $primaryKey = "";
     protected $allowedFields = [];
 
-    function getEmployee($id = ''){
-        $builder = $this->db->table('employee');
+    function getPortfolio($id = ''){
+        $builder = $this->db->table('portfolio');
 
         $builder->select('*');
         if($id){
@@ -23,12 +23,11 @@ class EmployeeModel extends Model
         return $data;
     }
 
-    function saveEmployee($input){
-        $builder = $this->db->table('employee');
+    function savePortfolio($input){
+        $builder = $this->db->table('portfolio');
 
         $builder->set('name', $input['name']);
-        $builder->set('position', $input['position']);
-        $builder->set('remark', $input['remark']);
+        $builder->set('link', $input['link']);
 
         if(!empty($input['image_path'])){
             $builder->set('image_path', $input['image_path']);
@@ -58,8 +57,8 @@ class EmployeeModel extends Model
         return $result;
     }
 
-    function deleteEmployee($id){
-        $builder = $this->db->table('employee');
+    function deletePortfolio($id){
+        $builder = $this->db->table('portfolio');
 
         $builder->set('is_active', 0);
         $builder->where('id', $id);
