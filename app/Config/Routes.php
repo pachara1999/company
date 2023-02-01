@@ -50,7 +50,12 @@ $routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' =
     $routes->get('employee/manage/(:any)', 'Employee::manage/$1');
     $routes->post('employee/save', 'Employee::save');
     $routes->post('employee/delete', 'Employee::deleteEmployee');
-    // news
+    // portfolio
+    $routes->get('portfolio', 'Portfolio::index');
+    $routes->get('portfolio/manage', 'Portfolio::manage');
+    $routes->get('portfolio/manage/(:any)', 'Portfolio::manage/$1');
+    $routes->post('portfolio/save', 'Portfolio::save');
+    $routes->post('portfolio/delete', 'Portfolio::deletePortfolio');
 });
 
 /*
