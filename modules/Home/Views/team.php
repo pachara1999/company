@@ -4,8 +4,8 @@
 <link rel="stylesheet" href="<?php echo base_url('public/asset/css/test.css') ?>">
 <!-- img SectionOne -->
 <div class="setimg container-fluid ">
-    <img src="https://img2.thaipng.com/20180729/blb/kisspng-desktop-wallpaper-display-resolution-high-definiti-falling-gold-5b5dc207e293e7.6449503615328711759281.jpg" alt="" width="100%" height="400px">
-    <div class="setImgSectio4">Our Team</div>
+    <img src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="" width="100%" height="400px">
+    <div class="setImgSectio4"><?=  $content_blog1['title'] ?></div>
 </div>
 <!-- end img SectionOne -->
 
@@ -14,18 +14,12 @@
     <div class="row py-3">
         <div class="col-5 px-5 py-3 col-sm-12 col-lg-5 text-sm-center text-md-center text-lg-start">
             <h4 class="">
-                An experienced, complementary and integrated team
+                <?=  $content_blog2['title'] ?>
             </h4>
         </div>
         <div class="col-7 py-3 col-sm-12 col-lg-7">
             <p>
-                Our team has 100+ years of combined investing experience and 100+ years of operating experience in the types of healthcare transformers that HealthQuest currently invests in.
-            </p>
-            <p>
-                Our partners have successfully led companies, commercialized medical products, built organizations, and treated patients—a broad range of experience that helps us recognize many of the challenges our portfolio companies are likely to encounter.
-            </p>
-            <p>
-                We are supplemented by a world-class Board of Advisors diversified across healthcare sectors that provide us and our portfolio companies unique strategic insights and opportunities.
+                <?=  $content_blog2['description'] ?>
             </p>
         </div>
     </div>

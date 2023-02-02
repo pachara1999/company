@@ -11,9 +11,26 @@ class NewsModel extends Model
     protected $allowedFields = [];
 
     // News
-    function getNews($id = "")
+    function getNews($id = "", $search = array(), $limit = '')
     {
         $builder = $this->db->table('news');
+
+        if(!empty($search['title'])){
+            $builder->where('title', $search['title']);
+        }
+
+        if(!empty($search['category_id'])){
+            $builder->where('category_id', $search['category_id']);
+        }
+
+        if(!empty($search['year'])){
+            $builder->where('year', $search['year']);
+        }
+
+        if($limit){
+            $builder->limit(($limit*9));
+        }
+
         if ($id) {
             $builder->select('*');
             $builder->where('id', $id);
@@ -22,6 +39,7 @@ class NewsModel extends Model
             $builder->select('news.*, std_news_category.name as cateName');
             $builder->join('std_news_category', 'std_news_category.id = news.category_id', 'left');
             $builder->where('news.is_active', 1);
+            $builder->orderBy('news.create_at', 'desc');
             $data = $builder->get()->getResultArray();
         }
 

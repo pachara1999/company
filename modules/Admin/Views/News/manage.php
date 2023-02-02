@@ -21,7 +21,11 @@
                                 <?php
                                 $year = date('Y');
                                 for ($i = $year; $i >= $year - 5; $i--) { ?>
-                                    <option value="<?= $i ?>" <?= (!empty($data['year'] && $data['year'] == $i) ? "selected" : "") ?>><?= $i ?></option>
+                                    <option value="<?= $i ?>" <?php if (!empty($data)) {
+                                                                    if ($data['year'] == $i) {
+                                                                        echo "selected";
+                                                                    }
+                                                                } ?>><?= $i ?></option>
                                 <?php } ?>
                             </select>
                         </div>
@@ -29,7 +33,11 @@
                             <label for="">ประเภทข่าว</label>
                             <select name="category_id" id="" class="form-control">
                                 <?php foreach ($categories as $category) { ?>
-                                    <option value="<?= $category['id'] ?>" <?= (!empty($data['category_id'] && $data['category_id'] ==  $category['id']) ? "selected" : "") ?>><?= $category['name'] ?></option>
+                                    <option value="<?= $category['id'] ?>" <?php if (!empty($data['category_id'])) {
+                                                                                if ($data['category_id'] ==  $category['id']) {
+                                                                                    echo "selected";
+                                                                                }
+                                                                            } ?>><?= $category['name'] ?></option>
                                 <?php } ?>
                             </select>
                         </div>

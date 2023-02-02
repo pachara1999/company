@@ -1,4 +1,5 @@
-<?php namespace App\Modules\Home\Models;
+<?php 
+namespace Modules\Home\Models;
 
 use CodeIgniter\Model;
 
@@ -7,4 +8,32 @@ class HomeModel extends Model
     protected $table      = "";
     protected $primaryKey = "";
     protected $allowedFields = [];
+
+    function getAllContent(){
+        $builder = $this->db->table('usrm_page')->orderBy('page, name', 'asc');
+        $data = $builder->select('*')->get()->getResultArray();
+        return $data ;
+    }
+
+    function getContent($page,$name){
+        $builder = $this->db->table('usrm_page');
+        $data = $builder->select('*')->where('page', $page)->where('name', $name)->get()->getRowArray();
+        return $data ;
+    }
+    
+    function saveContent($input){
+        $builder = $this->db->table('usrm_page');
+        $builder->set('title', $input['title']);
+        $builder->set('description', $input['description']);
+        if(!empty($input['image_path'])){
+            $builder->set('image_path', $input['image_path']);
+        }
+        $builder->where('id', $input['id']);
+        $builder->update();
+        $result = [
+            'status' => 'success',
+            'text' => 'แก้ไขสำเร็จ'
+        ];
+        return $result;
+    }
 }

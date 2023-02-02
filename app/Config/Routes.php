@@ -45,6 +45,7 @@ $routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' =
 
     $routes->get('menu-bar', 'Admin::menu_bar');
 
+    $routes->post('saveContent', 'Admin::saveContent');
     // employee
     $routes->get('employee', 'Employee::index');
     $routes->get('employee/manage', 'Employee::manage');
