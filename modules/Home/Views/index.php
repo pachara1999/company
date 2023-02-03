@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 <div>
-    <div class="setimg container-fluid">
+    <div class="setimg container-fluid p-0">
+
         <img src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']); ?>" alt="" width="100%" height="650px">
         <div class="setImgSection1"><?= $content_blog1['title'] ?></div>
         <h4 class="setImgSectio3">
@@ -23,7 +24,7 @@
                 </div>
             </div>
             <div class="text-center ">
-                <a href="<?= base_url('/about') ?>"type="button" class="btn border border-success border-2 text-success my-2">
+                <a href="<?= base_url('/about') ?>" type="button" class="btn border border-success border-2 text-success my-2">
                     FIND OUT MORE ABOUT US
                 </a>
             </div>
@@ -31,14 +32,14 @@
     </div>
 
 </div>
-<div class="setimg container-fluid py-4">
+<div class="setimg container-fluid py-4 p-0">
     <img src="<?php echo base_url('public/asset/img/content/' . $content_blog3['image_path']); ?>" alt="" width="100%" height="228px">
     <div class="setImgSectio2"><?= $content_blog3['title'] ?></div>
 </div>
 <div class="container text-center">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 py-2">
-            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_1['image_path']); ?>" alt="">
+            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_1['image_path']); ?>" alt="" class="img-fluid">
             <h4 class="pt-5 pb-1">
                 <?= $content_blog4_1['title'] ?>
             </h4>
@@ -47,7 +48,7 @@
             </p>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 py-2">
-            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_2['image_path']); ?>" alt="">
+            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_2['image_path']); ?>" alt="" class="img-fluid">
             <h4 class="pt-5 pb-1">
                 <?= $content_blog4_2['title'] ?>
             </h4>
@@ -56,7 +57,7 @@
             </p>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 py-2">
-            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_3['image_path']); ?>" alt="">
+            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_3['image_path']); ?>" alt="" class="img-fluid">
             <h4 class="pt-5 pb-1">
                 <?= $content_blog4_3['title'] ?>
             </h4>
@@ -66,10 +67,12 @@
         </div>
     </div>
 </div>
-<div class="setimg container-fluid py-4">
+<div class="setimg container-fluid py-4 p-0">
     <img src="<?php echo base_url('public/asset/img/content/' . $content_blog5['image_path']); ?>" alt="" width="100%" height="228px">
     <div class="setImgSectio2"><?= $content_blog5['title'] ?></div>
 </div>
+
+<!-- blog5 -->
 <div class="container py-4">
     <div class="row">
         <?php foreach ($news as $new) { ?>
@@ -78,7 +81,7 @@
                     <img src="<?php echo base_url('public/asset/img/news/' . $new['image_path']); ?>" alt="" width="220px" height="123px">
                 </div>
                 <p class="m-0" style="font-size:14px;"><?= $new['title'] ?></p>
-                <a href="<?= base_url('newsdetel/'.$new['id']) ?>" class="text-decoration-none text-black">Read More</a>
+                <a href="<?= base_url('newsdetel/' . $new['id']) ?>" class="text-decoration-none text-black">Read More</a>
                 <p style="font-size: small; color: gray;" class="pt-2"><?= $new['create_at'] ?></p>
             </div>
         <?php } ?>
@@ -90,7 +93,8 @@
     </div>
 </div>
 
-<div class="setimg container-fluid py-4">
+<!-- blog6 -->
+<div class="setimg container-fluid py-4 p-0">
     <img src="<?php echo base_url('public/asset/img/content/' . $content_blog6['image_path']); ?>" alt="" width="100%" height="228px">
     <div class="setImgSectio2"><?= $content_blog6['title'] ?></div>
 </div>

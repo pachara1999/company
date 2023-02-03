@@ -3,9 +3,9 @@
 <?php $this->section('content') ?>
 <link rel="stylesheet" href="<?php echo base_url('public/asset/css/test.css') ?>">
 <!-- img SectionOne -->
-<div class="setimg container-fluid ">
+<div class="setimg container-fluid p-0">
     <img src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="" width="100%" height="400px">
-    <div class="setImgSectio4"><?=  $content_blog1['title'] ?></div>
+    <div class="setImgSectio4"><?= $content_blog1['title'] ?></div>
 </div>
 <!-- end img SectionOne -->
 
@@ -14,12 +14,12 @@
     <div class="row py-3">
         <div class="col-5 px-5 py-3 col-sm-12 col-lg-5 text-sm-center text-md-center text-lg-start">
             <h4 class="">
-                <?=  $content_blog2['title'] ?>
+                <?= $content_blog2['title'] ?>
             </h4>
         </div>
         <div class="col-7 py-3 col-sm-12 col-lg-7">
             <p>
-                <?=  $content_blog2['description'] ?>
+                <?= $content_blog2['description'] ?>
             </p>
         </div>
     </div>
