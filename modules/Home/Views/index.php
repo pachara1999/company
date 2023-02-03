@@ -80,9 +80,11 @@
                 <div class="text-center">
                     <img src="<?php echo base_url('public/asset/img/news/' . $new['image_path']); ?>" alt="" width="220px" height="123px">
                 </div>
-                <p class="m-0" style="font-size:14px;"><?= $new['title'] ?></p>
-                <a href="<?= base_url('newsdetel/' . $new['id']) ?>" class="text-decoration-none text-black">Read More</a>
-                <p style="font-size: small; color: gray;" class="pt-2"><?= $new['create_at'] ?></p>
+                <div class="px-4 py-2">
+                    <p class="m-0" style="font-size:14px;"><?= $new['title'] ?></p>
+                    <a href="<?= base_url('newsdetel/' . $new['id']) ?>" class="text-decoration-none text-black">Read More</a>
+                    <p style="font-size: small; color: gray;" class="pt-1"><?= $new['create_at'] ?></p>
+                </div>
             </div>
         <?php } ?>
     </div>
