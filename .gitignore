@@ -6,8 +6,8 @@ vendor/.DS_Store
 app/.DS_Store
 public/.DS_Store
 # public/uploads
-public/asset/img/content/*
-public/asset/img/employee/*
-public/asset/img/logo/*
-public/asset/img/news/*
-public/asset/img/portfolio/*
+# public/asset/img/content/*
+# public/asset/img/employee/*
+# public/asset/img/logo/*
+# public/asset/img/news/*
+# public/asset/img/portfolio/*
