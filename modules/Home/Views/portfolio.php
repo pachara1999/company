@@ -13,7 +13,7 @@
     <div class="row">
         <?php foreach ($portfolios as $portfolio) { ?>
             <div class="setPositionIMG col-3 text-center py-1 col-lg-3 col-sm-12 col-md-6">
-                <a href="<?= $portfolio['link'] ?>">
+                <a href="<?= $portfolio['link'] ?>" target="_blank">
                     <img src="<?php echo base_url('public/asset/img/portfolio/' . $portfolio['image_path']) ?>" alt="<?php echo $portfolio['name'] ?>">
                 </a>
             </div>
