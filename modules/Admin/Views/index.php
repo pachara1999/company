@@ -13,12 +13,13 @@
             </div>
             <div class="col-md-12">
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table id="content-tbl" class="table table-striped">
                         <thead>
-                            <th width="10%">#</th>
-                            <th width="35%">ชื่อหน้า</th>
-                            <th width="35%">บล็อคของคอนเทนท์</th>
-                            <th width="20%">เครื่องมือ</th>
+                            <th width="10%" class="text-uppercase text-xxl font-weight-bolder opacity-7">#</th>
+                            <th width="20%" class="text-uppercase text-xxl font-weight-bolder opacity-7">ชื่อหน้า</th>
+                            <th width="20%" class="text-uppercase text-xxl font-weight-bolder opacity-7">บล็อคของคอนเทนท์</th>
+                            <th width="40%" class="text-uppercase text-xxl font-weight-bolder opacity-7">หัวข้อ</th>
+                            <th width="10%" class="text-uppercase text-xxl font-weight-bolder opacity-7">เครื่องมือ</th>
                         </thead>
                         <tbody>
                             <?php foreach ($content as $key => $row) { ?>
@@ -26,6 +27,7 @@
                                     <td><?= $key + 1 ?></td>
                                     <td><?= $row['page'] ?></td>
                                     <td><?= $row['name'] ?></td>
+                                    <td><?= $row['title'] ?></td>
                                     <td>
 
                                         <button type="button" class="btn btn-link text-warning text-gradient px-3 mb-0" data-bs-toggle="modal" data-bs-target="#edit_content<?php echo $key + 1 ?>"><i class="fa fa-pen"></i> แก้ไข</button>
@@ -82,6 +84,24 @@
 <script>
     $(document).ready(function() {
         CKEDITOR.replaceClass = 'ckeditor';
+
+        $('#content-tbl').DataTable({
+            "ordering": false,
+            "language": {
+                "lengthMenu": "แสดง _MENU_ แถว",
+                "zeroRecords": "ไม่พบข้อมูล",
+                "info": "แสดง _START_ ถึง _END_ จาก _TOTAL_ แถว",
+                "infoEmpty": "ไม่มีข้อมูล",
+                "infoFiltered": "(กรองข้อมูล _MAX_ ทุกแถว)",
+                "paginate": {
+                    "first": "หน้าแรก",
+                    "previous": "<",
+                    "next": ">",
+                    "last": "หน้าสุดท้าย"
+                },
+                "search": "ค้นหา :",
+            }
+        });
     });
 </script>
 <?php $this->endSection() ?>
