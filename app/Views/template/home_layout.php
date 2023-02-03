@@ -27,49 +27,21 @@
 
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-2">
         <div class="container">
-
             <a href="<?php echo base_url('/home') ?>" class="navbar-brand">
                 <img src="<?php echo base_url(session()->get('logo_image')) ?>" alt="" width="170px" height="80px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <?php foreach (session()->get('menubar') as $menubar) { ?>
-                        <li class="nav-item text-md-center text-sm-center">
-                            <a href="<?php echo base_url($menubar['link']) ?>" class="nav-link text-while">
+                        <li class="nav-item text-md-start text-sm-start text-lg-start py-2">
+                            <a href="<?php echo base_url($menubar['link']) ?>" class="nav-link text-while  p-0 mx-md-3 mx-lg-5 mx-sm-2">
                                 <?= $menubar['name'] ?>
                             </a>
                         </li>
                     <?php } ?>
-                    <!-- <li class="nav-item text-md-center text-sm-center">
-                        <a href="<?php echo base_url('/about') ?>" class="nav-link  text-while">
-                            ABOUT US
-                        </a>
-                    </li>
-                    <li class="nav-item text-md-center text-sm-center">
-                        <a href="<?php echo base_url('/team') ?>" class="nav-link  text-while">
-                            TEAM
-                        </a>
-                    </li>
-                    <li class="nav-item text-md-center text-sm-center">
-                        <a href="<?php echo base_url('/portfolio') ?>" class="nav-link  text-while ">
-                            PORTFOLIO
-                        </a>
-                    </li>
-                    <li class="nav-item text-md-center text-sm-center">
-                        <a href="<?php echo base_url('/new') ?>" class="nav-link  text-while ">
-                            NEWS & INSIGHTS
-                        </a>
-                    </li>
-                    <li class="nav-item text-md-center text-sm-center">
-                        <a href="<?php echo base_url('/contact') ?>" class="nav-link  text-while ">
-                            CONTACT
-                        </a>
-                    </li> -->
                 </ul>
             </div>
         </div>
@@ -84,26 +56,29 @@
     <?php $this->renderSection('content'); ?>
     <div class="container-fluid bg-black">
         <div class="container">
-            <div class="row py-4">
-                <div class="col-8 text-left col-lg-8 col-sm-4 col-md-4">
+            <div class="row py-2">
+                <div class="col-6 text-left col-lg-7 col-sm-12 col-md-4 text-sm-center py-sm-4 py-md-2 py-lg-2 text-md-start text-lg-start">
                     <img src="<?php echo base_url(session()->get('logo_image')) ?>" alt="" width="140px" height="70">
                 </div>
-                <div class="col-2 col-sm-4 col-md-4 col-lg-2">
-                    <p style="color: white; font-size: 12px;">1301 Shoreway Rd Suite 350
-                        Belmont, CA 94002</p>
+                <div class="col-4 col-sm-6 col-md-6 col-lg-3 text-sm-start text-md-start text-lg-start py-sm-4 py-md-2 py-lg-2 my-auto mt-md-4">
+                    <div>
+                        <p style="color: white; font-size: 16px;">
+                            1301 Shoreway Rd Suite 350
+                            Belmont, CA 94002</p>
+                    </div>
                 </div>
-                <div class="col-2 col-sm-4 col-md-4 col-lg-2 gap-3 text-center" style="color: white;">
+                <div class="col-2 col-sm-6 col-md-2 col-lg-2  text-center py-sm-4 py-md-2 py-lg-2 my-auto" style="color: white;">
                     <i class="bi bi-linkedin px-2"></i>
                     <i class="bi bi-twitter px-2"></i>
                 </div>
             </div>
-            <div class="d-flex justify-content-between" style="color: white;">
-                <div>
+            <div class="row py-2" style="color: white;">
+                <div class="col-6 text-sm-center text-md-start text-lg-start col-sm-12 col-md-7 col-lg-7">
                     <p>
                         Copyrights © 2021 | HealthQuest Capital | All rights reserved
                     </p>
                 </div>
-                <div>
+                <div class="col-6 text-sm-center text-md-center text-lg-start col-sm-12 col-md-5 col-lg-5">
                     <p>
                         website by Chase e-Design
                     </p>
