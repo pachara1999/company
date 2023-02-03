@@ -15,7 +15,9 @@ class Portfolio extends BaseController
     }
 
     public function manage($id = ''){
-        return view('Modules\Admin\Views\Portfolio\manage');
+        $PortfolioModel = new PortfolioModel;
+        $data['data'] = $PortfolioModel->getPortfolio($id);
+        return view('Modules\Admin\Views\Portfolio\manage',$data);
     }
 
     public function save(){
