@@ -27,20 +27,25 @@
 
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-2">
         <div class="container">
+
             <a href="<?php echo base_url('/home') ?>" class="navbar-brand">
-                <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1452196668201-5EIWFKPJRM1JG0NEHJ3S/HQC+logo+clear.png?format=1500w" alt="" width="170px" height="80px">
+                <img src="<?php echo base_url(session()->get('logo_image')) ?>" alt="" width="170px" height="80px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item text-md-center text-sm-center">
-                        <a href="<?php echo base_url('/home') ?>" class="nav-link text-while">
-                            HOME
-                        </a>
-                    </li>
-                    <li class="nav-item text-md-center text-sm-center">
+                    <?php foreach (session()->get('menubar') as $menubar) { ?>
+                        <li class="nav-item text-md-center text-sm-center">
+                            <a href="<?php echo base_url($menubar['link']) ?>" class="nav-link text-while">
+                                <?= $menubar['name'] ?>
+                            </a>
+                        </li>
+                    <?php } ?>
+                    <!-- <li class="nav-item text-md-center text-sm-center">
                         <a href="<?php echo base_url('/about') ?>" class="nav-link  text-while">
                             ABOUT US
                         </a>
@@ -64,7 +69,7 @@
                         <a href="<?php echo base_url('/contact') ?>" class="nav-link  text-while ">
                             CONTACT
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -81,7 +86,7 @@
         <div class="container">
             <div class="row py-4">
                 <div class="col-8 text-left col-lg-8 col-sm-4 col-md-4">
-                    <img src="https://static1.squarespace.com/static/568d36dfa12f449ad80575ea/t/5d2d575603c9c7000132a815/1563252567230/logo.png" alt="" width="140px" height="70">
+                    <img src="<?php echo base_url(session()->get('logo_image')) ?>" alt="" width="140px" height="70">
                 </div>
                 <div class="col-2 col-sm-4 col-md-4 col-lg-2">
                     <p style="color: white; font-size: 12px;">1301 Shoreway Rd Suite 350

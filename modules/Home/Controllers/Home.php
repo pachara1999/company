@@ -13,7 +13,15 @@ class Home extends BaseController
     public function index()
     {
         $HomeModel = new HomeModel();
-        
+
+        $data['menu'] = $HomeModel->getNavbar('nav');
+        $menu_bar = [
+            'menubar' => $data['menu']
+        ];
+        session()->set($menu_bar);
+        $data['logo'] = $HomeModel->getNavbar('logo');
+        $logo = [ 'logo_image' => $data['logo'][0]['image_path'] ];
+        session()->set($logo);
         $data['content_blog1'] = $HomeModel->getContent('home', 'blog_1');
         $data['content_blog2'] = $HomeModel->getContent('home', 'blog_2');
         $data['content_blog3'] = $HomeModel->getContent('home', 'blog_3');
