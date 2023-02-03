@@ -32,6 +32,7 @@
     </div>
 
 </div>
+
 <div class="setimg container-fluid py-4 p-0">
     <img src="<?php echo base_url('public/asset/img/content/' . $content_blog3['image_path']); ?>" alt="" width="100%" height="228px">
     <div class="setImgSectio2"><?= $content_blog3['title'] ?></div>
