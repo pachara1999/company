@@ -11,7 +11,7 @@ class NewsModel extends Model
     protected $allowedFields = [];
 
     // News
-    function getNews($id = "", $search = array(), $limit = '')
+    function getNews($id = "", $search = array(), $limit = '',$page='')
     {
         $builder = $this->db->table('news');
 
@@ -27,8 +27,10 @@ class NewsModel extends Model
             $builder->where('year', $search['year']);
         }
 
-        if($limit){
+        if($page=='news'){
             $builder->limit(($limit*9));
+        }elseif($page=='home'){
+            $builder->limit(($limit));
         }
 
         if ($id) {

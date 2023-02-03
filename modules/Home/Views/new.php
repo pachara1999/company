@@ -6,7 +6,7 @@
 
 <div>
     <div class="setimg container-fluid">
-        <img src="<?= $content_blog1['image_path'] ?>" alt="" width="100%" height="650px">
+        <img src="<?php echo base_url('public/asset/img/content/'.$content_blog1['image_path']) ?>" alt="" width="100%" height="650px">
         <div class="setImgSectio2"><?= $content_blog1['title'] ?></div>
     </div>
 </div>
@@ -68,7 +68,7 @@
                 <div class="row">
                     <?php foreach ($news as $new) { ?>
                         <div class="col-4 col-sm-12 col-md-6 col-lg-4">
-                            <a href="" class="text-decoration-none text-dark">
+                            <a href="<?php echo base_url('newsdetel/'.$new['id']) ?>" class="text-decoration-none text-dark">
                                 <div class="setPositionIMGnew mx-auto">
                                     <img src="<?php echo base_url('public/asset/img/news/' . $new['image_path']); ?>" alt="">
                                 </div>

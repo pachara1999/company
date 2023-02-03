@@ -12,7 +12,26 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('Modules\Home\Views\index');
+        $HomeModel = new HomeModel();
+        
+        $data['content_blog1'] = $HomeModel->getContent('home', 'blog_1');
+        $data['content_blog2'] = $HomeModel->getContent('home', 'blog_2');
+        $data['content_blog3'] = $HomeModel->getContent('home', 'blog_3');
+        $data['content_blog4_1'] = $HomeModel->getContent('home', 'blog_4-1');
+        $data['content_blog4_2'] = $HomeModel->getContent('home', 'blog_4-2');
+        $data['content_blog4_3'] = $HomeModel->getContent('home', 'blog_4-3');
+        $data['content_blog5'] = $HomeModel->getContent('home', 'blog_5');
+        $data['content_blog6'] = $HomeModel->getContent('home', 'blog_6');
+        $data['content_blog7_1'] = $HomeModel->getContent('home', 'blog_7-1');
+        $data['content_blog7_2'] = $HomeModel->getContent('home', 'blog_7-2');
+        $data['content_blog8'] = $HomeModel->getContent('home', 'blog_8');
+
+        $NewsModel = new NewsModel();
+        $data['news'] = $NewsModel->getNews('', '', 4, 'home');
+        $PortfolioModel = new PortfolioModel;
+        $data['portfolios'] = $PortfolioModel->getPortfolio();
+
+        return view('Modules\Home\Views\index', $data);
     }
     public function about()
     {
@@ -63,14 +82,18 @@ class Home extends BaseController
         $data['content_blog2'] = $HomeModel->getContent('news', 'blog_2');
         $NewsModel = new NewsModel();
         
-        $data['news'] = $NewsModel->getNews('', $searh, $searh['offset']);
+        $data['news'] = $NewsModel->getNews('', $searh, $searh['offset'], 'news');
         $data['categories'] = $NewsModel->getNewCategory();
 
         return view('Modules\Home\Views\new', $data);
     }
-    public function newsdetel()
+    public function newsdetel($id)
     {
-        return view('Modules\Home\Views\newsdetel');
+        $NewsModel = new NewsModel;
+        if ($id) {
+            $data['data'] = $NewsModel->getNews($id);
+        }
+        return view('Modules\Home\Views\newsdetel', $data);
     }
     public function contact()
     {

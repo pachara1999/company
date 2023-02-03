@@ -6,199 +6,119 @@
 
 <div>
     <div class="setimg container-fluid">
-        <img src="https://img2.thaipng.com/20180729/blb/kisspng-desktop-wallpaper-display-resolution-high-definiti-falling-gold-5b5dc207e293e7.6449503615328711759281.jpg" alt="" width="100%" height="650px">
-        <div class="setImgSection1">HealthQuest</div>
+        <img src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']); ?>" alt="" width="100%" height="650px">
+        <div class="setImgSection1"><?= $content_blog1['title'] ?></div>
         <h4 class="setImgSectio3">
-            PROVIDING GROWTH CAPITAL TO COMPANIES TRANSFORMING HEALTHCARE
+            <?= $content_blog1['description'] ?>
         </h4>
     </div>
     <div class="container">
         <div class="row px-5 py-5">
             <div class="col-4 text-center display-6  col-sm-12">
-                Our Mission
+                <?= $content_blog2['title'] ?>
             </div>
             <div class="col col-sm-12 py-2">
                 <div class="row py-2">
-                    At HealthQuest, it’s our mission to broadly improve people’s lives through healthcare innovation.
-                </div>
-                <div class="row py-2">
-                    We do this by being best-in-class, working with outstanding people, and conducting ourselves ethically and with integrity.
-                </div>
-                <div class="row py-2">
-                    We aim to identify and invest in companies that are transforming the healthcare landscape, and generate outsize risk-adjusted returns for our stakeholders.
+                    <?= $content_blog2['description'] ?>
                 </div>
             </div>
             <div class="text-center ">
-                <button type="button" class="btn border border-success border-2 text-success my-2">
+                <a href="<?= base_url('/about') ?>"type="button" class="btn border border-success border-2 text-success my-2">
                     FIND OUT MORE ABOUT US
-                </button>
+                </a>
             </div>
         </div>
     </div>
 
 </div>
 <div class="setimg container-fluid py-4">
-    <img src="https://img2.thaipng.com/20180729/blb/kisspng-desktop-wallpaper-display-resolution-high-definiti-falling-gold-5b5dc207e293e7.6449503615328711759281.jpg" alt="" width="100%" height="228px">
-    <div class="setImgSectio2">Our Focus</div>
+    <img src="<?php echo base_url('public/asset/img/content/' . $content_blog3['image_path']); ?>" alt="" width="100%" height="228px">
+    <div class="setImgSectio2"><?= $content_blog3['title'] ?></div>
 </div>
 <div class="container text-center">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 py-2">
-            <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562678738618-FGOBLPF5TFUHXOPPPON3/icon1s.png?format=100w" alt="">
+            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_1['image_path']); ?>" alt="">
             <h4 class="pt-5 pb-1">
-                STAGE
+                <?= $content_blog4_1['title'] ?>
             </h4>
             <p class="text-start">
-                We view ourselves as a “venture growth” fund and are looking for commercial stage investments, where our capital is primarily directed towards growing revenues and scaling the company.
-            </p>
-            <p class="text-start">
-                We are interested in learning now about companies that may not yet be at this stage, but will be in the near future. If this is the only criterion that your business does not meet, please send us your business plan, so we can follow you for a future potential investment.
+                <?= $content_blog4_1['description'] ?>
             </p>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 py-2">
-            <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562678750708-QT4Z02XNQAZGE0Z816BN/icon2s.png?format=100w" alt="">
+            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_2['image_path']); ?>" alt="">
             <h4 class="pt-5 pb-1">
-                SECTORS
+                <?= $content_blog4_2['title'] ?>
             </h4>
             <p class="text-start">
-                We invest in healthcare transformers: companies that are improving outcomes, or reducing the cost of, and improving the efficiency of delivering healthcare.
-            </p>
-            <p class="text-start">
-                We invest in innovation broadly across the healthcare spectrum: medical devices and technologies, diagnostics, research tools, digital health, healthcare IT, and innovative services.
+                <?= $content_blog4_2['description'] ?>
             </p>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 py-2">
-            <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562678758978-IARE19ZJVCQ100KJOBIK/icon3s.png?format=100w" alt="">
+            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_3['image_path']); ?>" alt="">
             <h4 class="pt-5 pb-1">
-                CHARACTERISTICS
+                <?= $content_blog4_3['title'] ?>
             </h4>
             <p class="text-start">
-                We look for rapidly growing, commercial-stage companies that are optimizing value in healthcare. We look for opportunities where the product or service is proven, the commercial recipe for success is clear, and the primary issue is properly resourcing the company. We like experienced management teams focused on capital-efficiency, but have the vision and urgency to build a large and profitable enterprise.
-            </p>
-            <p class="text-start">
-                We typically invest $20-100M per company. We prefer to lead investments, and have the ability to syndicate.
+                <?= $content_blog4_3['description'] ?>
             </p>
         </div>
     </div>
 </div>
 <div class="setimg container-fluid py-4">
-    <img src="https://img2.thaipng.com/20180729/blb/kisspng-desktop-wallpaper-display-resolution-high-definiti-falling-gold-5b5dc207e293e7.6449503615328711759281.jpg" alt="" width="100%" height="228px">
-    <div class="setImgSectio2">Latest News</div>
+    <img src="<?php echo base_url('public/asset/img/content/' . $content_blog5['image_path']); ?>" alt="" width="100%" height="228px">
+    <div class="setImgSectio2"><?= $content_blog5['title'] ?></div>
 </div>
 <div class="container py-4">
     <div class="row">
-        <div class="col-3 col-sm-12 col-md-6 col-lg-3">
-            <div class="text-center">
-                <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1674226303852-17DL0QF9INAU1CZ8P768/Lunit.png" alt="" width="220px" height="123px">
+        <?php foreach ($news as $new) { ?>
+            <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                <div class="text-center">
+                    <img src="<?php echo base_url('public/asset/img/news/' . $new['image_path']); ?>" alt="" width="220px" height="123px">
+                </div>
+                <p class="m-0" style="font-size:14px;"><?= $new['title'] ?></p>
+                <a href="<?= base_url('newsdetel/'.$new['id']) ?>" class="text-decoration-none text-black">Read More</a>
+                <p style="font-size: small; color: gray;" class="pt-2"><?= $new['create_at'] ?></p>
             </div>
-            <p class="m-0" style="font-size:14px;">Lunit Highlights the Effectiveness of AI in Predicting Cancer Treatment Outcomes - Findings to be Presented at ASCO GI 2023</p>
-            <a href="" class="text-decoration-none text-black">Read More</a>
-            <p style="font-size: small; color: gray;" class="pt-2">Jan 20, 2023</p>
-        </div>
-        <div class="col-3 col-sm-12 col-md-6 col-lg-3">
-            <div class="text-center">
-                <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1668625840576-9E6P16O1SDL5D19CL1HU/everly+health.png" alt="" width="220px" height="123px">
-            </div>
-            <p class="m-0" style="font-size:14px;">Everly Health Unveils Spotwell Technology in New Mobile App</p>
-            <a href="" class="text-decoration-none text-black">Read More</a>
-            <p style="font-size: small; color: gray;" class="pt-2">Nov 15, 2022</p>
-        </div>
-        <div class="col-3 col-sm-12 col-md-6 col-lg-3">
-            <div class="text-center">
-                <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1668626224676-NCWEWQ71FH33WQQVOV48/magnolia.jpg" alt="" width="220px" height="123px">
-            </div>
-            <p class="m-0" style="font-size:14px;">Magnolia Medical: United Hospital Center Improves Patient Outcomes and Margins by Avoiding False-Positive Blood Cultures</p>
-            <a href="" class="text-decoration-none text-black">Read More</a>
-            <p style="font-size: small; color: gray;" class="pt-2">Nov 14, 2022</p>
-        </div>
-        <div class="col-3 col-sm-12 col-md-6 col-lg-3">
-            <div class="text-center">
-                <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1668625740118-FBO1EN6TBPFNC842W2I0/Rarecyte.png" alt="" width="220px" height="123px">
-            </div>
-            <p class="m-0" style="font-size:14px;">Rarecyte Selected for The Wellcome Leap in Utero Program; Will Utilize its Rare Cell Liquid Biopsy Platform to Perform Breakthrough Research to Decrease Stillbirth Rates Worldwide</p>
-            <a href="" class="text-decoration-none text-black">Read More</a>
-            <p style="font-size: small; color: gray;" class="pt-2">Nov 14, 2022</p>
-        </div>
+        <?php } ?>
     </div>
     <div class="text-center">
-        <button type="button" class="btn border border-success border-2 text-success">
+        <a href="<?= base_url('/new') ?>" type="button" class="btn border border-success border-2 text-success">
             MORE PORTFOLIO NEWS
-        </button>
+        </a>
     </div>
 </div>
 
 <div class="setimg container-fluid py-4">
-    <img src="https://img2.thaipng.com/20180729/blb/kisspng-desktop-wallpaper-display-resolution-high-definiti-falling-gold-5b5dc207e293e7.6449503615328711759281.jpg" alt="" width="100%" height="228px">
-    <div class="setImgSectio2">Our Portfolio</div>
+    <img src="<?php echo base_url('public/asset/img/content/' . $content_blog6['image_path']); ?>" alt="" width="100%" height="228px">
+    <div class="setImgSectio2"><?= $content_blog6['title'] ?></div>
 </div>
 <div class="container py-5">
     <div class="row">
         <div class="col-4 col-sm-12 col-lg-4">
             <h4 class="text-center">
-                Our Portfolio
+                <?= $content_blog7_1['title'] ?>
             </h4>
             <p class="py-3">
-                We invest in commercial stage innovations across the healthcare spectrum : medical devices and technologies, biopharma, diagnostics, digital health, healthcare IT, and innovative services. In fact, we're interested in knowing about almost any innovative and proprietary product or service that improves value in healthcare: either improving a patient outcome, or increasing the efficiency (lowering the cost) of delivery.
+                <?= $content_blog7_1['description'] ?>
             </p>
             <div class="text-center ">
-                <button type="button" class="btn border border-success border-2 text-success my-2">
+                <a href="<?= base_url('/portfolio') ?>" type="button" class="btn border border-success border-2 text-success my-2">
                     VIEW FULL PORTFOLIO
-                </button>
+                </a>
             </div>
         </div>
         <div class="col-sm-12 col-lg-8 col-md-12">
             <h4 class="text-center">
-                Active Investments
+                <?= $content_blog7_2['title'] ?>
             </h4>
             <div class="row ">
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1569875961575-OIK4LY3RTH8KCPF106QW/AJAX-III.jpg" alt="setImg" class="">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1569875961575-OIK4LY3RTH8KCPF106QW/AJAX-III.jpg" alt="" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562057494398-26QMO4KG5MB0W1QR5Z4V/alcresta-therapeutics.jpg" alt="" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1586311870786-Z5DOVPPE80OHXJ43JEC2/AmWell_logo_RGB_Color.png" alt="" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1572284498254-AGQXN2XMA4VQEIB6OMZS/Castle.png" alt="" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562057496408-ONZYBKJQWZR2NHF6R2D4/cleanslate-addiction-treatment-centers.jpg" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1625755016678-BFCC5V2X7H9RDM8JJ8UH/83bar--llc_owler_20210122_091104_original.png" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1611371200363-F0ZFCGB72WYVC2E4XITW/Etairos+PrimaryLogo_Color_RGB-01.jpg" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1634762670898-NQMK45RMY9TJ62GP806J/ENT.png" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1625755041170-V8NPT6XC54ZOJK762TE9/everly+health.png" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1586311857784-EGPQ6WVNB63D31UIRB7U/glaukos_owler_20190808_065805_original.jpg" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562057496973-9NQM94ORLK3FL8YMP4Q1/health-channels.jpg" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1639438096281-N8YJ56UAX1ZSGV2A364T/lunit.png" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562057498118-W53TOYYA0EZQVABB74BG/magnolia.jpg" class="setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1663868978862-WBLK4O8TKA1E1B5MLLU0/Nomad%2BLogo.png" class=" setImg">
-                </div>
-                <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
-                    <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1586875131773-Z0I4THV454PFJ3QWY81Q/Perspectum+Logo.png" class="setImg">
-                </div>
+                <?php foreach ($portfolios as $portfolio) { ?>
+                    <div class="setPositionIMG col-2 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center text-center">
+                        <img src="<?php echo base_url('public/asset/img/portfolio/' . $portfolio['image_path']) ?>" alt="<?php echo $portfolio['name'] ?>" alt="setImg" class="">
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -207,34 +127,25 @@
 <div class="container ">
     <div class="text-center py-4">
         <h3 class="py-2">
-            Why Green Apples?
-        </h3>
-        <h3 class="py-2">
-            Sometimes we get asked: “what’s with the green apples?”
+            <?= $content_blog8['title'] ?>
         </h3>
     </div>
     <div class="row m-0">
         <div class="col-4 text-center col-sm-12 col-md-12 col-lg-4">
-            <img src="https://images.squarespace-cdn.com/content/v1/568d36dfa12f449ad80575ea/1562919110443-4AI2HULXA5Y1BDBEPLLV/green_apples-RGB%2B%282%29.jpg?format=750w" alt="" width="250" height="250">
+            <img src="<?php echo base_url('public/asset/img/content/' . $content_blog8['image_path']); ?>" alt="" width="250" height="250">
         </div>
         <div class="col-7 col-sm-12 col-md-12 col-lg-7">
             <div class="row">
-                <p>A lot, as it turns out....</p>
-            </div>
-            <div class="row">
-                <p class="text-justify">The apple has been a sign of health and wellness for generations. The Welsh used to quote "Ait a happle avore gwain to bed, An' you'll make the doctor beg his bread," or in more modern English: "An apple before bed, and you'll keep the doctor from earning his bread." Of course we all know it better as "An apple a day keeps the doctor away." As sticklers for good science, we aren't sure if that's fully supportable -- but, fortunately for them, the apple growing industry has never had to file with the FDA for claims substantiation. Nonetheless, apples say something about taking personal responsibility for our health, which is one of the themes that we believe will be important to sustainability in healthcare.</p>
-            </div>
-            <div class="row">
-                <p>Green, of course, means that they are still ripening (our apologies to Granny Smith fans), much like the businesses we invest in. Importantly though, these apples are apples by design, as symbolized by the front apple in wire frame mode. Like this apple, great young companies are great by intention and design. We think it's here that the HealthQuest team adds its most important value, with decades of experience designing, building and ripening businesses (both as entrepreneurs ourselves and as investors). So, there you have it.</p>
+                <p><?= $content_blog8['description'] ?></p>
             </div>
         </div>
     </div>
 </div>
 <div class="container border-top-3 border border-muted my-3" style="width: 800px;"></div>
 <div class="text-center my-4">
-    <button type="button" class="btn border border-success border-2 text-success">
+    <a href="<?= base_url('/contact') ?>" type="button" class="btn border border-success border-2 text-success">
         CONTACT US
-    </button>
+    </a>
 </div>
 </div>
 
