@@ -2,17 +2,24 @@
 <?php $this->section('content') ?>
 <link rel="stylesheet" href="<?php echo base_url('public/asset/css/test.css') ?>">
 
-<div class="setimg container-fluid p-0">
-    <img src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="" width="100%" height="750px">
-    <div class="setImgSectio2"><?= $content_blog1['title'] ?></div>
+<div class="container-fluid p-0 overflow-hidden">
+    <div class="card card-inverse border-0 text-center" style="height: fit-content; ">
+        <img class="card-img-top3" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
+        <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white; padding-bottom: 50px;">
+            <h1 class="card-title" style="font-size: 80px;"><?= $content_blog1['title'] ?></h1>
+        </div>
+    </div>
 </div>
+
+
+
 <div class="container">
     <div class="text-center py-5">
         <h1><?= $content_blog2['title'] ?></h1>
     </div>
     <div class="row">
         <?php foreach ($portfolios as $portfolio) { ?>
-            <div class="setPositionIMG col-3 text-center py-1 col-lg-3 col-sm-12 col-md-6">
+            <div class="setPositionIMG  text-center py-1 col-sm-12 col-lg-3 col-md-6">
                 <a href="<?= $portfolio['link'] ?>" target="_blank">
                     <img src="<?php echo base_url('public/asset/img/portfolio/' . $portfolio['image_path']) ?>" alt="<?php echo $portfolio['name'] ?>">
                 </a>

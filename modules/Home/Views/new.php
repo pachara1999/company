@@ -4,23 +4,29 @@
 <link rel="stylesheet" href="<?php echo base_url('public/asset/css/test.css') ?>">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-<div>
-    <div class="setimg container-fluid p-0">
-        <img src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="" width="100%" height="650px">
-        <div class="setImgSectio2"><?= $content_blog1['title'] ?></div>
+<div class="container-fluid p-0 overflow-hidden">
+    <div class="card card-inverse border-0 text-center" style="height: fit-content; ">
+        <img class="card-img-top3" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
+        <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white; padding-bottom: 50px;">
+            <h1 class="card-title" style="font-size: 80px;"><?= $content_blog1['title'] ?></h1>
+        </div>
     </div>
 </div>
+
 <div class="py-5">
     <div class="text-center">
         <h1>
             <?= $content_blog2['title'] ?>
         </h1>
     </div>
-    <div class="container border-top-3 border border-muted my-3" style="width: 800px;"></div>
+    <div class="container py-3">
+        <div class="border-top-3 border border-muted" style="width: 100%;">
+        </div>
+    </div>
     <div class="container">
         <div class="row">
 
-            <div class="col-3 col-sm-12 col-md-12 col-lg-3">
+            <div class="col-sm-12 col-md-12 col-lg-3">
                 <form id="search_form" action="<?php echo base_url('/new'); ?>">
                     <input type="hidden" id="offset" name="offset" value="<?php if (!empty($_GET['offset'])) {
                                                                                 echo $_GET['offset'];
@@ -58,16 +64,21 @@
                         </div>
                     </div>
                     <div>
-                        <input type="text" placeholder="Search" name="title" value="<?= (!empty($_GET['title']) ? $_GET['title'] : "") ?>">
-                        <button type="submit"><i class="bi bi-search"></i></button>
+                        <!-- <input type="text" placeholder="Search" name="title" value="<?= (!empty($_GET['title']) ? $_GET['title'] : "") ?>"> -->
+                        <!-- <button type="submit"><i class="bi bi-search"></i></button> -->
+
+                        <div class="d-flex">
+                            <input class="form-control me-1" type="text" placeholder="Search" name="title" aria-label="Search" value="<?= (!empty($_GET['title']) ? $_GET['title'] : "") ?>">
+                            <button class=" btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                        </div>
                     </div>
                 </form>
             </div>
 
-            <div class="col-9 col-sm-12 col-md-12 col-lg-9">
+            <div class="col-sm-12 col-md-12 col-lg-9">
                 <div class="row">
                     <?php foreach ($news as $new) { ?>
-                        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                             <a href="<?php echo base_url('newsdetel/' . $new['id']) ?>" class="text-decoration-none text-dark">
                                 <div class="setPositionIMGnew mx-auto">
                                     <img src="<?php echo base_url('public/asset/img/news/' . $new['image_path']); ?>" alt="">
@@ -88,7 +99,7 @@
                             LOAD MORE...
                         </button>
                     </div>
-                    <p style="padding-left: 150px;" class="py-4">
+                    <p class="py-4 px-auto">
                         For older news, please filter by year using the filters above
                     </p>
                 </div>

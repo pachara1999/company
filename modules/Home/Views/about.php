@@ -3,12 +3,16 @@
 <?php $this->section('content') ?>
 <link rel="stylesheet" href="<?php echo base_url('public/asset/css/test.css') ?>">
 
-<div class="setimg container-fluid p-0">
-    <img src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="" width="100%" height="450px">
-    <div class="setImgSection1 "><?= $content_blog1['title'] ?></div>
+<div class="container-fluid p-0 overflow-hidden">
+    <div class="card card-inverse border-0 text-center" style="height: fit-content; ">
+        <img class="card-img-top1" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
+        <div class="card-img-overlay d-flex flex-column justify-content-end" style="color: white; padding-bottom: 50px;">
+            <h1 class="card-title"><?= $content_blog1['title'] ?></h1>
+        </div>
+    </div>
 </div>
 <div class="container">
-    <div class="text-sectionTwo">
+    <div class="text-sectionTwo px-3">
         <p>
             <?= $content_blog1['description'] ?>
         </p>
@@ -19,62 +23,27 @@
         </div>
     </div>
 </div>
-<div class="setimg container-fluid py-4 p-0">
-    <img src="<?php echo base_url('public/asset/img/content/' . $content_blog2['image_path']) ?>" alt="" width="100%" height="228px">
-    <div class="setImgSectio2"><?= $content_blog2['title'] ?></div>
+<div class="container-fluid p-0 overflow-hidden py-4">
+    <div class="card card-inverse border-0 text-center" style="height: fit-content; ">
+        <img class="card-img-top2" src="<?php echo base_url('public/asset/img/content/' . $content_blog2['image_path']) ?>" alt="">
+        <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white;">
+            <h1 class="card-title"><?= $content_blog2['title'] ?></h1>
+        </div>
+    </div>
 </div>
-<div class="container px-5">
-    <div class="row px-5">
-        <div class="col-3 py-3 col-sm-12">
+
+<div class="container ">
+    <div class="row px-3">
+        <div class="py-3 col-sm-12">
             <h5 class="text-sm-center text-md-center text-lg-start">
                 <?= $content_blog3['title'] ?>
             </h5>
         </div>
-        <div class="col-9 py-3 col-sm-12">
+        <div class="py-3 col-sm-12">
             <p>
                 <?= $content_blog3['description'] ?>
             </p>
         </div>
-        <!-- <div class="col-3 py-3 col-sm-12 text-sm-center">
-            <h5 class="text-sm-center text-md-center text-lg-start">
-                EXCELLENCE
-            </h5>
-        </div>
-        <div class="col-9 py-3 col-sm-12">
-            <p>
-                We aim to be the best at what we do. We are talented, motivated and results-oriented. We attract top-tier talent as colleagues, partners, investees and advisors.
-            </p>
-        </div>
-        <div class="col-3 py-3 col-sm-12 text-sm-center">
-            <h5 class="text-sm-center text-md-center text-lg-start">
-                RESPECT
-            </h5>
-        </div>
-        <div class="col-9 py-3 col-sm-12">
-            <p>
-                We treat everyone with respect and are easy to work with. We honor our commitments.
-            </p>
-        </div>
-        <div class="col-3 py-3 col-sm-12 text-sm-center">
-            <h5 class="text-sm-center text-md-center text-lg-start">
-                COLLABORATION
-            </h5>
-        </div>
-        <div class="col-9 py-3 col-sm-12">
-            <p>
-                We are team-oriented and aim to balance stakeholder objectives to create “win-win” outcomes.
-            </p>
-        </div>
-        <div class="col-3 py-3 col-sm-12 text-sm-center">
-            <h5 class="text-sm-center text-md-center text-lg-start">
-                PARTNERSHIP
-            </h5>
-        </div>
-        <div class="col-9 py-3 col-sm-12">
-            <p>
-                We strive to be good partners not only by aiming to deliver great outcomes, but also by providing incredible service, insights and access to our ecosystem.
-            </p>
-        </div> -->
     </div>
 </div>
 
