@@ -8,7 +8,7 @@
     <div class="card card-inverse border-0 text-center" style="height: fit-content; ">
         <img class="card-img-top3" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
         <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white; padding-bottom: 50px;">
-            <h1 class="card-title" style="font-size: 80px;"><?= $content_blog1['title'] ?></h1>
+            <h1 class="card-title1 m-0"><?= $content_blog1['title'] ?></h1>
         </div>
     </div>
 </div>

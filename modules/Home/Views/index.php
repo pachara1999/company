@@ -8,8 +8,8 @@
     <div class="container-fluid p-0 overflow-hidden">
         <div class="card card-inverse border-0 text-center" style="width: 100%;">
             <img class="card-img-top1" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']); ?>" alt="">
-            <div class="card-img-overlay h-100 d-flex flex-column justify-content-end" style="color: white; padding-top: auto;">
-                <h1 class="card-title"><?= $content_blog1['title'] ?></h1>
+            <div class="card-img-overlay h-100 d-flex flex-column justify-content-end" style="color: white;">
+                <h1 class="card-title2"><?= $content_blog1['title'] ?></h1>
                 <p class="card-text"><?= $content_blog1['description'] ?></p>
             </div>
         </div>
