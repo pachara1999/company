@@ -42,7 +42,7 @@
     </div>
 </div>
 
-<div class="container text-center">
+<div class="container text-center py-5">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 py-2">
             <img src="<?php echo base_url('public/asset/img/content/' . $content_blog4_1['image_path']); ?>" alt="" class="img-fluid">
@@ -99,11 +99,10 @@
                 </div>
                 <div class="px-4 py-2 px-lg-5 px-md-0 px-sm-0">
                     <div class="text-sm-center text-md-center text-lg-start">
-                        <p style="font-size:14px;" class="m-0"><?= $new['title'] ?></p>
+                        <p style="font-size:14px;" class="text-sm-center text-md-start text-lg-start m-0"><?= $new['title'] ?></p>
                         <a href="<?= base_url('newsdetel/' . $new['id']) ?>" class="text-decoration-none text-black" style="font-size:12px;">Read More</a>
                         <p style="font-size: small; color: gray;" class="pt-1"><?= $new['create_at'] ?></p>
                     </div>
-
                 </div>
             </div>
         <?php } ?>
