@@ -14,19 +14,21 @@
     </div>
     <div class="pt-4">
         <div class="container">
-            <h2 class="text-center py-2">
+            <h2 class="text-center py-2 SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 28px; color: rgba(23,23,23,.8);">
                 Office Hours for Underrepresented Healthcare Entrepreneurs
             </h2>
-            <p class="px-5">
+            <p class="px-5 SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 16px; color: rgba(23,23,23,.8);">
                 Our mandate at HealthQuest is to invest in innovation that improves value and access in the healthcare system for all patients. We believe that diverse leadership is critical to the future of healthcare innovation. We’re hosting office hours for pre-founders, founders, and CEOs from diverse backgrounds historically underrepresented in healthcare, who are building companies of any stage in the healthcare sector. Through this initiative, we aim to provide support and mentorship to underrepresented entrepreneurs and take an important first step in working towards a more inclusive future.
             </p>
-            <p class="px-5">
+            <p class="px-5 SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 16px; color: rgba(23,23,23,.8);">
                 Office hours appointments are limited but we’ll do our best to accommodate as many entrepreneurs as possible. If you’re interested in meeting with us, please fill out the form below and we’ll get back to you!
             </p>
         </div>
 
         <div class="container">
-            <div class="border-top-3 border border-muted" style="width: 100%;">
+            <div class="py-3">
+                <div class="border-top-3 border border-muted " style="width: 100%;">
+                </div>
             </div>
             <form>
                 <div class="row px-5 py-3">
@@ -73,50 +75,50 @@
                         <p>Tell us about yourself</p>
                         <p style="font-size: 12px;">This initiative was created with healthcare entrepreneurs that have historically had limited access to VC funding in mind. Below are some categories of groups that may identify as underrepresented. Please check any that apply to you: </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;">
+                            <input class="form-check-input SetFontProxima" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;color: rgba(23,23,23,.8);">
                                 African American/Black
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;">
+                            <input class="form-check-input SetFontProxima" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px; color: rgba(23,23,23,.8);">
                                 Female
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;">
+                            <input class="form-check-input SetFontProxima" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px; color: rgba(23,23,23,.8);">
                                 Non-Binary
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;">
+                            <input class="form-check-input SetFontProxima" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px; color: rgba(23,23,23,.8);">
                                 Hispanic/Latinx
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;">
+                            <input class="form-check-input SetFontProxima" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px; color: rgba(23,23,23,.8);">
                                 LGBTQ
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;">
+                            <input class="form-check-input SetFontProxima" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px; color: rgba(23,23,23,.8);">
                                 Living with a disability
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;">
+                            <input class="form-check-input SetFontProxima" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px; color: rgba(23,23,23,.8);">
                                 Native American/Alaskan Native
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px;">
+                            <input class="form-check-input SetFontProxima" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 12px; color: rgba(23,23,23,.8);">
                                 Other (please identify below)
                             </label>
                         </div>
