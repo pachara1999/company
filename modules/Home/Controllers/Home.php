@@ -22,6 +22,16 @@ class Home extends BaseController
         $data['logo'] = $HomeModel->getNavbar('logo');
         $logo = ['logo_image' => $data['logo'][0]['image_path']];
         session()->set($logo);
+        $data['footer_copyright'] = $HomeModel->getFooter('footer', 'copyright');
+        $data['footer_contact'] = $HomeModel->getFooter('footer', 'contact');
+        $data['footer_credit'] = $HomeModel->getFooter('footer', 'credit');
+        $footer = [
+            'cpr_ft' => $data['footer_copyright'],
+            'contact_ft' => $data['footer_contact'],
+            'credit_ft' => $data['footer_credit']
+        ] ;
+        session()->set($footer);
+
         $data['content_blog1'] = $HomeModel->getContent('home', 'blog_1');
         $data['content_blog2'] = $HomeModel->getContent('home', 'blog_2');
         $data['content_blog3'] = $HomeModel->getContent('home', 'blog_3');

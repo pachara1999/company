@@ -9,7 +9,8 @@
                 <h4>จัดการคอนเทนท์</h4>
             </div>
             <div class="col-md-12">
-                <a href="<?php echo base_url('admin/menu-bar'); ?>" class="btn btn-warning">จัดการเมนู</a>
+                <a href="<?php echo base_url('admin/menu-bar'); ?>" class="btn btn-warning">แก้ไขเมนู</a>
+                <a href="<?php echo base_url('admin/manage-footer'); ?>" class="btn btn-warning">แก้ไข Footer</a>
             </div>
             <div class="col-md-12">
                 <div class="table-responsive">
