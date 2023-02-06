@@ -25,7 +25,7 @@
         }
     </style>
 
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark px-2">
+    <nav class="navbar navbar-dark navbar-expand-xl bg-dark ">
         <div class="container">
             <a href="<?php echo base_url('/home') ?>" class="navbar-brand">
                 <img src="<?php echo base_url(session()->get('logo_image')) ?>" alt="" width="170px" height="80px">
@@ -36,8 +36,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <?php foreach (session()->get('menubar') as $menubar) { ?>
-                        <li class="nav-item text-md-start text-sm-start text-lg-start py-2">
-                            <a href="<?php echo base_url($menubar['link']) ?>" class="nav-link text-while  p-0 mx-md-3 mx-lg-5 mx-sm-2">
+                        <li class="nav-item text-md-start text-sm-start text-lg-start py-2 ">
+                            <a href="<?php echo base_url($menubar['link']) ?>" class="nav-link text-while  p-0 mx-md-1 mx-lg-4 mx-sm-1">
                                 <?= $menubar['name'] ?>
                             </a>
                         </li>

@@ -20,7 +20,7 @@ class Home extends BaseController
         ];
         session()->set($menu_bar);
         $data['logo'] = $HomeModel->getNavbar('logo');
-        $logo = [ 'logo_image' => $data['logo'][0]['image_path'] ];
+        $logo = ['logo_image' => $data['logo'][0]['image_path']];
         session()->set($logo);
         $data['content_blog1'] = $HomeModel->getContent('home', 'blog_1');
         $data['content_blog2'] = $HomeModel->getContent('home', 'blog_2');
@@ -82,14 +82,14 @@ class Home extends BaseController
     public function news()
     {
         $searh = $this->request->getGet();
-        if(empty($searh['offset'])){
-            $searh['offset'] = 1 ;
+        if (empty($searh['offset'])) {
+            $searh['offset'] = 1;
         }
         $HomeModel = new HomeModel();
         $data['content_blog1'] = $HomeModel->getContent('news', 'blog_1');
         $data['content_blog2'] = $HomeModel->getContent('news', 'blog_2');
         $NewsModel = new NewsModel();
-        
+
         $data['news'] = $NewsModel->getNews('', $searh, $searh['offset'], 'news');
         $data['categories'] = $NewsModel->getNewCategory();
 
