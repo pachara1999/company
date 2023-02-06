@@ -16,15 +16,15 @@ class NewsModel extends Model
         $builder = $this->db->table('news');
 
         if(!empty($search['title'])){
-            $builder->where('title', $search['title']);
+            $builder->where("news.title LIKE '%" . $search['title'] . "%'");
         }
 
         if(!empty($search['category_id'])){
-            $builder->where('category_id', $search['category_id']);
+            $builder->where('news.category_id', $search['category_id']);
         }
 
         if(!empty($search['year'])){
-            $builder->where('year', $search['year']);
+            $builder->where('news.year', $search['year']);
         }
 
         if($page=='news'){
