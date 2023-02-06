@@ -110,4 +110,9 @@ class Home extends BaseController
         $data['content_blog2'] = $HomeModel->getContent('contact', 'blog_2');
         return view('Modules\Home\Views\contact', $data);
     }
+
+    public function pulsecheck()
+    {
+        return view('Modules\Home\Views\pulsecheck');
+    }
 }
