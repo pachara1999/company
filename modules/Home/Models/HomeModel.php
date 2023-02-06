@@ -76,4 +76,26 @@ class HomeModel extends Model
         ];
         return $result;
     }
+
+    // footer
+    function getFooter($group, $parent = ''){
+        $builder = $this->db->table('usrm_menubar');
+        $builder->select('*');
+        $builder->where('group', $group);
+        if($parent){
+            $builder->where('parent', $parent);
+            $data = $builder->get()->getRowArray();
+        }else{
+            $data = $builder->get()->getResultArray();
+        }
+
+        return $data;
+    }
+
+    function saveFooter($input){
+        $builder = $this->db->table('usrm_menubar');
+        $builder->set('name', $input['name']);
+        $builder->where('id', $input['id']);
+        $builder->update();
+    }
 }

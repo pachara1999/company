@@ -50,6 +50,9 @@ $routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' =
     $routes->post('saveMenubar', 'Admin::saveMenubar');
     $routes->post('saveLogo', 'Admin::saveLogo');
 
+    $routes->get('manage-footer', 'Admin::manage_footer');
+    $routes->post('saveFooter', 'Admin::saveFooter');
+
     $routes->post('saveContent', 'Admin::saveContent');
     // employee
     $routes->get('employee', 'Employee::index');
