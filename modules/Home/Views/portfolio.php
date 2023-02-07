@@ -28,6 +28,13 @@
     </div>
     <!-- <div class="container border-top-3 border border-muted my-3" style="width: 800px;"></div> -->
 </div>
+<script>
+    var image = document.getElementsByClassName('thumbnail');
+    new simpleParallax(image, {
+        sscale: 1,
+        orientation: 'down',
+    });
+</script>
 <?php $this->endSection() ?>
 
 <?php $this->section('scripts') ?>

@@ -1,6 +1,4 @@
-
-/* @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');  */
-@import url('https://fonts.cdnfonts.com/css/futura-pt');
+/* @import url('https://fonts.cdnfonts.com/css/futura-pt'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 
@@ -13,7 +11,7 @@
 }
 
 .SetFontFutura{
-    font-family: 'fantabular-sans-mvb', mono;
+    font-family: 'futura-pt', sans-serif;
 }
 
 .setImgSection1 {

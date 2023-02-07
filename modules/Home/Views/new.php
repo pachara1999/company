@@ -112,6 +112,13 @@
 <?php $this->endSection() ?>
 
 <?php $this->section('scripts') ?>
+<script>
+    var image = document.getElementsByClassName('thumbnail');
+    new simpleParallax(image, {
+        sscale: 1,
+        orientation: 'down',
+    });
+</script>
 <script type="text/javascript">
     function LoadMoreContent() {
         var offset = $('#offset').val();
