@@ -63,8 +63,8 @@
                 <div class="col-4 col-sm-6 col-md-6 col-lg-3 text-sm-start text-md-start text-lg-start py-sm-4 py-md-2 py-lg-2 my-auto mt-md-4">
                     <div>
                         <p style="color: white; font-size: 16px;">
-                            1301 Shoreway Rd Suite 350
-                            Belmont, CA 94002</p>
+                            <?= session()->get('contact_ft.name') ?>
+                        </p>
                     </div>
                 </div>
                 <div class="col-2 col-sm-6 col-md-2 col-lg-2  text-center py-sm-4 py-md-2 py-lg-2 my-auto" style="color: white;">
@@ -75,12 +75,14 @@
             <div class="row py-2" style="color: white;">
                 <div class="col-6 text-sm-center text-md-start text-lg-start col-sm-12 col-md-7 col-lg-7">
                     <p>
-                        Copyrights © 2021 | HealthQuest Capital | All rights reserved
+                        <!-- Copyrights © 2021 | HealthQuest Capital | All rights reserved -->
+                        <?= session()->get('cpr_ft.name') ?>
                     </p>
                 </div>
                 <div class="col-6 text-sm-center text-md-center text-lg-start col-sm-12 col-md-5 col-lg-5">
                     <p>
-                        website by Chase e-Design
+                        <!-- website by Chase e-Design -->
+                        <?= session()->get('credit_ft.name') ?>
                     </p>
                 </div>
             </div>
