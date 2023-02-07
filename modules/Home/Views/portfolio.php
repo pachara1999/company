@@ -1,6 +1,7 @@
 <?php $this->extend('template/home_layout') ?>
 <?php $this->section('content') ?>
 <link rel="stylesheet" href="<?php echo base_url('public/asset/css/test.css') ?>">
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 
 <div class="container-fluid p-0 overflow-hidden">
     <div class="card card-inverse border-0 text-center" style="height: auto; ">

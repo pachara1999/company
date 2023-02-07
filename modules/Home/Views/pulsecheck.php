@@ -2,10 +2,11 @@
 
 <?php $this->section('content') ?>
 <link rel="stylesheet" href="<?php echo base_url('public/asset/css/test.css') ?>">
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 
 <div class="container-fluid p-0 overflow-hidden">
     <div class="card card-inverse border-0 text-center" style="height: fit-content; ">
-        <img class="card-img-top4 thumbnail" src="" alt="">
+        <img class="card-img-top4 thumbnail" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
         <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white; padding-bottom: 50px;">
             <h1 class="card-title4 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 600; font-style: normal;">
                 <?= $content_blog1['title'] ?>
