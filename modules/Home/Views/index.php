@@ -3,18 +3,19 @@
 <?php $this->section('content') ?>
 <link rel="stylesheet" href="<?php echo base_url('public/asset/css/test.css') ?>">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<script src="<?php echo base_url('public/asset/js/parallax.min.js') ?>"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 
-
-<div>
-    <section id="getstarted" class="py-5" style="background-image: url(<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']); ?>);">
-        <div class="dark-overlay">
-            <div class="container">
-                <div class="card-img-overlay h-100 d-flex flex-column pb-5 justify-content-end text-center " style="color: white;">
-                    <h1 class="card-title2 SetFontProxima" style=" font-weight: 700; color:#7cbf4f"><?= $content_blog1['title'] ?></h1>
-                </div>
-            </div>
+<div class="parallax-container">
+    <img class="img-fluid thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']); ?>" alt="">
+    <div class="teaser">
+        <div class="content">
+            <h1 class="card-title2 SetFontProxima" style=" font-weight: 700; color:#7cbf4f"><?= $content_blog1['title'] ?></h1>
+            <p class="card-text SetFontProxima" style="font-size: 20px; font-weight: 300;"><?= $content_blog1['description'] ?></p>
         </div>
-    </section>
+    </div>
+</div>
+<div>
     <div class="container">
         <div class="row px-5 py-5">
             <div class="SetFontLoTo  col-sm-12 col-md-4 text-sm-start text-md-center text-lg-center py-3" style="font-weight: 400;
@@ -35,14 +36,11 @@
     </div>
 </div>
 
-<div>
-    <section id="getstarted1" class="py-5" style="background-image: url(<?php echo base_url('public/asset/img/content/' . $content_blog3['image_path']); ?>);">
-        <div class="dark-overlay">
-            <div class="container">
-                <div class="card-img-overlay h-100 d-flex flex-column  justify-content-center text-center " style="color: white;">
-                    <h1 class="card-title2 SetFontProxima" style=" font-weight: 700; color:#7cbf4f"><?= $content_blog3['title'] ?></h1>
-                </div>
-            </div>
+<div class="container-fluid p-0 overflow-hidden">
+    <div class="card card-inverse border-0 text-center" style="width: 100%">
+        <img class="img-fluid card-img-top2 thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog3['image_path']); ?>" alt="">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center" style="color: black;">
+            <h1 class="card-title SetFontProxima" style="font-size: 84px; color: #7cbf4f;"><?= $content_blog3['title'] ?></h1>
         </div>
     </section>
 </div>
@@ -87,12 +85,11 @@
     </div>
 </div>
 
-<section id="getstarted1" class="py-5" style="background-image: url(<?php echo base_url('public/asset/img/content/' . $content_blog5['image_path']); ?>);">
-    <div class="dark-overlay">
-        <div class="container">
-            <div class="card-img-overlay h-100 d-flex flex-column  justify-content-center text-center " style="color: white;">
-                <h1 class="card-title2 SetFontProxima" style=" font-weight: 700; color:#7cbf4f"><?= $content_blog5['title'] ?></h1>
-            </div>
+<div class="container-fluid p-0 overflow-hidden">
+    <div class="card card-inverse border-0 text-center" style="width: 100%">
+        <img class="card-img-top2 thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog5['image_path']); ?>" alt="">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center" style="color: black;">
+            <h1 class="card-title SetFontProxima" style="font-size: 84px; font-weight: 700; color: #7cbf4f;"><?= $content_blog5['title'] ?></h1>
         </div>
     </div>
 </section>
@@ -123,12 +120,11 @@
 </div>
 
 <!-- blog6 -->
-<section id="getstarted1" class="py-5" style="background-image: url(<?php echo base_url('public/asset/img/content/' . $content_blog6['image_path']); ?>);">
-    <div class="dark-overlay">
-        <div class="container">
-            <div class="card-img-overlay h-100 d-flex flex-column  justify-content-center text-center " style="color: white;">
-                <h1 class="card-title2 SetFontProxima" style=" font-weight: 700; color:#7cbf4f"><?= $content_blog6['title'] ?></h1>
-            </div>
+<div class="container-fluid p-0 overflow-hidden">
+    <div class="card card-inverse border-0 text-center" style="width: 100%">
+        <img class="card-img-top2 thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog6['image_path']); ?>" alt="">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center" style="color: black;">
+            <h1 class="card-title SetFontProxima" style="font-size: 84px; font-weight: 700; color: #7cbf4f;"><?= $content_blog6['title'] ?></h1>
         </div>
     </div>
 </section>
@@ -198,11 +194,19 @@
     </a>
 </div>
 </div>
-
+<!-- <script>
+    var parallax = new Parallax('#parallax');
+    parallax.init();
+</script> -->
+<script>
+    var image = document.getElementsByClassName('thumbnail');
+    new simpleParallax(image, {
+        sscale: 1,
+        orientation: 'down',
+    });
+</script>
 <?php $this->endSection() ?>
 
 <?php $this->section('scripts') ?>
-<script type="text/javascript">
 
-</script>
 <?php $this->endSection() ?>

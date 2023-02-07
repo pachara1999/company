@@ -1,9 +1,6 @@
-
-/* @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');  */
 /* @import url('https://fonts.cdnfonts.com/css/futura-pt'); */
-@import url('https://fonts.cdnfonts.com/css/futura-pt');
-@import url('//db.onlinewebfonts.com/c/3c6b0199ae7b57966132e83c939d77e2?family=Futura+PT+Medium');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 
 .SetFontLoTo{
     font-family: 'Roboto Condensed', sans-serif;
@@ -14,7 +11,7 @@
 }
 
 .SetFontFutura{
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'futura-pt', sans-serif;
 }
 
 .setImgSection1 {
@@ -91,9 +88,7 @@
     border: 0;
 }
 .card-img-top1 {
-    border-radius: 0;
-    width: 100%;
-    height: 40vw;
+    height: auto;
     object-fit: cover;
 }
 .card-img-top2 {
@@ -103,11 +98,28 @@
     object-fit: cover;
 }
 
+.parallax-container{
+    position: relative;
+    overflow: hidden;
+}
+.teaser .content {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: white;
+    width: 100%;
+    transform: translate(0, -50%);
+  }
+  .parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 .card-img-top3 {
-    border-radius: 0;
     width: 100%;
     height: 40vw;
     object-fit: cover;
+    background-color: black;
 }
 .card-img-top4 {
     border-radius: 0;
@@ -196,45 +208,14 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 900px){ 
-    #getstarted{
-        min-height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    #getstarted1{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        min-height: 300px;
-    }
-    #getstarted2{
-        position: relative;
-        min-height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    #getstarted3{
-        position: relative;
-        min-height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    #getstarted4{
-        position: relative;
-        min-height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
+    .teaser .content {
+        position: absolute;
+        top: 55%;
+        text-align: center;
+        color: white;
+        width: 100%;
+        transform: translate(0, -50%);
+      }
     .card-img-top3 {
         border-radius: 0;
         width: 100%;
