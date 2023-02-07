@@ -72,4 +72,30 @@ class Admin extends BaseController
         $HomeModel = $HomeModel->saveLogo($input);
         return redirect()->to('/admin/menu-bar');
     }
+
+    // Footer
+    public function manage_footer(){
+        $HomeModel = new HomeModel();
+        $data['footer_copyright'] = $HomeModel->getFooter('footer', 'copyright');
+        $data['footer_contact'] = $HomeModel->getFooter('footer', 'contact');
+        $data['footer_credit'] = $HomeModel->getFooter('footer', 'credit');
+        return view('Modules\Admin\Views\menubar\manage_footer', $data);
+    }
+
+    public function saveFooter(){
+        $HomeModel = new HomeModel();
+        $input = $this->request->getPost();
+        
+        for ($i = 0 ; $i <= count($input) ; $i++){
+            $data = [
+                'id' => $input['id'][$i],
+                'name' => $input['name'][$i],
+            ];
+            // echo "<pre>" ;
+            // print_r($data);
+            $HomeModel->saveFooter($data);
+        }
+        // exit;
+        return redirect()->to(base_url('/admin'));
+    }
 }
