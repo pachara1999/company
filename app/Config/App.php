@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://localhost:8888/company';
+	public $baseURL = 'https://7fab-171-4-218-183.ap.ngrok.io/company';
 
 	/**
 	 * --------------------------------------------------------------------------
