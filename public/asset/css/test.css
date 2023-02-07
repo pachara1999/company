@@ -144,6 +144,8 @@
 #getstarted{
     position: relative;
     min-height: 700px;
+    overflow: hidden;
+    animation:anim-opacity-full 480ms ease-out;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,6 +154,9 @@
 #getstarted1{
     position: relative;
     min-height: 300px;
+    overflow: hidden;
+    animation:anim-opacity-full 480ms ease-out;
+    -webkit-font-smoothing:antialiased;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,6 +166,9 @@
 #getstarted2{
     position: relative;
     min-height: 525px;
+    overflow: hidden;
+    animation:anim-opacity-full 480ms ease-out;
+    -webkit-font-smoothing:antialiased;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,6 +177,8 @@
 #getstarted3{
     position: relative;
     min-height: 380px;
+    overflow: hidden;
+    animation:anim-opacity-full 480ms ease-out;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,6 +187,8 @@
 #getstarted4{
     position: relative;
     min-height: 650px;
+    animation:anim-opacity-full 480ms ease-out;
+    -webkit-font-smoothing:antialiased;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
