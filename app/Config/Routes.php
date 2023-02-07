@@ -34,6 +34,7 @@ $routes->get('/profireteam/(:any)', 'Home::profireteam/$1');
 $routes->get('/newsdetel/(:any)', 'Home::newsdetel/$1');
 $routes->get('/pulsecheck', 'Home::pulsecheck');
 
+$routes->post('/addContact', 'Home::addContact');
 
 // Auth Routes
 $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {
@@ -77,6 +78,10 @@ $routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' =
     $routes->get('news/manage-category', 'News::category_index');
     $routes->post('news/add-category', 'News::category_add');
     $routes->post('news/delete-category', 'News::category_delete');
+
+    // Contact
+    $routes->get('contact', 'Admin::contact_index');
+    $routes->post('contact/delete', 'Admin::deleteContact');
 });
 
 /*

@@ -67,6 +67,12 @@
             <span class="nav-link-text ms-1">ข่าวสาร</span>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link <?= uri_string() == 'contact' ? 'active' : '' ?>" href="<?php echo base_url('admin/contact/'); ?>">
+            <i class="fa-brands fa-telegram text-primary"></i>
+            <span class="nav-link-text ms-1">Contact</span>
+          </a>
+        </li>
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">ระบบ</h6>
         </li>

@@ -4,6 +4,8 @@ namespace Modules\Admin\Controllers;
 
 use App\Controllers\BaseController;
 use Modules\Home\Models\HomeModel;
+use Modules\Home\Models\ContactModel;
+
 
 class Admin extends BaseController
 {
@@ -97,5 +99,21 @@ class Admin extends BaseController
         }
         // exit;
         return redirect()->to(base_url('/admin'));
+    }
+
+    // Contact
+    public function contact_index(){
+        $ContactModel = new ContactModel();
+        $data['contacts'] = $ContactModel->getContact();
+        return view('Modules\Admin\Views\contact', $data);
+    }
+
+    public function deleteContact(){
+        $input = $this->request->getPost();
+        
+        $ContactModel = new ContactModel();
+        $result = $ContactModel->deleteContact($input['id']);
+
+        return $this->response->setJSON($result);
     }
 }

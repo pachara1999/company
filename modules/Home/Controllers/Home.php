@@ -7,6 +7,8 @@ use Modules\Admin\Models\EmployeeModel;
 use Modules\Admin\Models\PortfolioModel;
 use Modules\Admin\Models\NewsModel;
 use Modules\Home\Models\HomeModel;
+use Modules\Home\Models\ContactModel;
+
 
 class Home extends BaseController
 {
@@ -113,6 +115,7 @@ class Home extends BaseController
         }
         return view('Modules\Home\Views\newsdetel', $data);
     }
+
     public function contact()
     {
         $HomeModel = new HomeModel();
@@ -121,8 +124,18 @@ class Home extends BaseController
         return view('Modules\Home\Views\contact', $data);
     }
 
+    public function addContact(){
+        $ContactModel = new ContactModel;
+        $input = $this->request->getPost();
+        $ContactModel->addContact($input);
+        return redirect()->to(base_url('/'));
+    }
+
     public function pulsecheck()
     {
-        return view('Modules\Home\Views\pulsecheck');
+        $HomeModel = new HomeModel();
+        $data['content_blog1'] = $HomeModel->getContent('project', 'blog_1');
+        $data['content_blog2'] = $HomeModel->getContent('project', 'blog_2');
+        return view('Modules\Home\Views\pulsecheck', $data);
     }
 }

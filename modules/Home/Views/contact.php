@@ -42,31 +42,31 @@
         <h2 class="text-center SetFontLoTo" style="font-weight:600;font-style: normal;font-size: 28px; color: rgba(23,23,23,.8);">
             Contact Us By Filling the Form Below
         </h2>
-        <form>
+        <form action="<?= base_url('/addContact') ?>" method="post">
             <div class="row px-5">
                 <div class="col-md-6 col-lg-6 col-sm-12 py-2 px-5">
                     <label for="inputName" class="SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 16px; color: rgba(23,23,23,.8);">Name</label>
-                    <input type="text" class="form-control" id="inputEmail4">
+                    <input type="text" class="form-control" id="inputEmail4" name="firstname" maxlength="100" required>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-12 py-2 px-5">
                     <label for="inputLastname" class="SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 16px;color: rgba(23,23,23,.8);">Lastname</label>
-                    <input type="text" class="form-control" id="inputPassword4">
+                    <input type="text" class="form-control" id="inputPassword4" name="lastname" maxlength="100" required>
                 </div>
                 <div class="col-md-12 col-lg-12 col-sm-12 py-2 px-5">
                     <label for="inputAddress" class="SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 16px;color: rgba(23,23,23,.8);">Email Address</label>
-                    <input type="text" class="form-control" id="inputAddress">
+                    <input type="text" class="form-control" id="inputAddress" name="email" maxlength="100" required>
                 </div>
                 <div class="col-md-12 col-lg-12 col-sm-12 py-2 px-5" style="font-weight: 400;font-style: normal;font-size: 16px;color: rgba(23,23,23,.8);">
                     <label for="inputSubject" class="SetFontProxima">Subject</label>
-                    <input type="text" class="form-control" id="inputAddress2">
+                    <input type="text" class="form-control" id="inputAddress2" name="subject" maxlength="100" required>
                 </div>
                 <div class="col-md-12 col-lg-12 col-sm-12 py-2 px-5" style="font-weight: 400;font-style: normal;font-size: 16px;color: rgba(23,23,23,.8);">
                     <label for="inputMessage" class="SetFontProxima">Message</label>
-                    <textarea id="subject" class="form-control" name="subject" style="width: 100%;"></textarea>
+                    <textarea id="subject" class="form-control" name="message" style="width: 100%;"></textarea>
                 </div>
             </div>
             <div class="text-center py-3">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-success">Submit</button>
             </div>
         </form>
     </div>

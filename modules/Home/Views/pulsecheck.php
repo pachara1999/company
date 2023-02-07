@@ -5,23 +5,20 @@
 
 <div class="container-fluid p-0 overflow-hidden">
     <div class="card card-inverse border-0 text-center" style="height: fit-content; ">
-        <img class="card-img-top4" src="" alt="">
+        <img class="card-img-top4" src="<?php echo base_url('public/asset/content/' . $content_blog1['image_path']); ?>" alt="">
         <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white; padding-bottom: 50px;">
             <h1 class="card-title4 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 600; font-style: normal;">
-                Project PulseCheck
+                <?= $content_blog1['title'] ?>
             </h1>
         </div>
     </div>
     <div class="pt-4">
         <div class="container">
             <h2 class="text-center py-2 SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 28px; color: rgba(23,23,23,.8);">
-                Office Hours for Underrepresented Healthcare Entrepreneurs
+                <?= $content_blog2['title'] ?>
             </h2>
             <p class="px-5 SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 16px; color: rgba(23,23,23,.8);">
-                Our mandate at HealthQuest is to invest in innovation that improves value and access in the healthcare system for all patients. We believe that diverse leadership is critical to the future of healthcare innovation. We’re hosting office hours for pre-founders, founders, and CEOs from diverse backgrounds historically underrepresented in healthcare, who are building companies of any stage in the healthcare sector. Through this initiative, we aim to provide support and mentorship to underrepresented entrepreneurs and take an important first step in working towards a more inclusive future.
-            </p>
-            <p class="px-5 SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 16px; color: rgba(23,23,23,.8);">
-                Office hours appointments are limited but we’ll do our best to accommodate as many entrepreneurs as possible. If you’re interested in meeting with us, please fill out the form below and we’ll get back to you!
+                <?= $content_blog2['description'] ?>
             </p>
         </div>
 
