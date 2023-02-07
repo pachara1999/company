@@ -3,14 +3,15 @@
 <?php $this->section('content') ?>
 <link rel="stylesheet" href="<?php echo base_url('public/asset/css/test.css') ?>">
 <!-- img SectionOne -->
-<div class="container-fluid p-0 overflow-hidden">
-    <div class="card card-inverse border-0 text-center" style="height: fit-content; ">
-        <img class="card-img-top3" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
-        <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white;">
-            <h1 class="card-title1 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 500; font-style: normal;"><?= $content_blog1['title'] ?></h1>
+<section id="getstarted3" class="py-5" style="background-image: url(<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>);">
+    <div class="dark-overlay">
+        <div class="container">
+            <div class="card-img-overlay h-100 d-flex flex-column pb-5 justify-content-end text-center " style="color: white;">
+                <h1 class="card-title2 SetFontProxima" style=" font-weight: 700; color:#7cbf4f"><?= $content_blog1['title'] ?></h1>
+            </div>
         </div>
     </div>
-</div>
+</section>
 <!-- end img SectionOne -->
 
 <!-- Section One -->
