@@ -6,6 +6,7 @@ vendor/.DS_Store
 app/.DS_Store
 public/.DS_Store
 # public/uploads
+app/Config/App.php
 public/asset/img/content/*
 public/asset/img/employee/*
 public/asset/img/logo/*
