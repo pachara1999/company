@@ -32,6 +32,9 @@ $routes->get('/new', 'Home::news');
 $routes->get('/contact', 'Home::contact');
 $routes->get('/profireteam/(:any)', 'Home::profireteam/$1');
 $routes->get('/newsdetel/(:any)', 'Home::newsdetel/$1');
+$routes->get('/pulsecheck', 'Home::pulsecheck');
+
+
 // Auth Routes
 $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {
     // $routes->get('add', 'Auth::add');

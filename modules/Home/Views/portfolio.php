@@ -6,7 +6,7 @@
     <div class="card card-inverse border-0 text-center" style="height: auto; ">
         <img class="card-img-top3" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
         <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white; padding-bottom: 50px;">
-            <h1 class="card-title1 m-0"><?= $content_blog1['title'] ?></h1>
+            <h1 class="card-title1 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 600; font-style: normal;"><?= $content_blog1['title'] ?></h1>
         </div>
     </div>
 </div>
@@ -14,8 +14,8 @@
 
 
 <div class="container">
-    <div class="text-center py-5">
-        <h1><?= $content_blog2['title'] ?></h1>
+    <div class="text-center py-5 SetFontLoTo">
+        <h1 style="font-weight: 400;font-style: normal;font-size: 28px;"><?= $content_blog2['title'] ?></h1>
     </div>
     <div class="row">
         <?php foreach ($portfolios as $portfolio) { ?>

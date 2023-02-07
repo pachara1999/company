@@ -1,8 +1,20 @@
+
+/* @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');  */
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-*{
+
+.SetFontLoTo{
     font-family: 'Roboto Condensed', sans-serif;
-    margin: 0;
 }
+
+.SetFontProxima{
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.SetFontFutura{
+    font-family: 'fantabular-sans-mvb', mono;
+}
+
 .setImgSection1 {
     position: absolute;
     top: 65%;
@@ -95,11 +107,34 @@
     height: 40vw;
     object-fit: cover;
 }
+.card-img-top4 {
+    border-radius: 0;
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
 .card-title1{
+    font-size: 85px;
+}
+.card-title{
     font-size: 80px;
 }
 .card-title2{
-    font-size: 60px;
+    font-size: 85px;
+}
+.card-title4{
+    font-size: 75px;
+}
+
+.setPositonPhone{
+    text-align: start;
+    margin: 0;
+}
+.setImgFooter{
+    text-align: start;
+}
+.settextfooter{
+    text-align: start;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 900px){ 
@@ -107,6 +142,12 @@
         border-radius: 0;
         width: 100%;
         height: 70vw;
+        object-fit: cover;
+    }
+    .card-img-top4 {
+        border-radius: 0;
+        width: 100%;
+        height: 80vw;
         object-fit: cover;
     }
     .card-img-top1 {
@@ -121,10 +162,29 @@
         height: 50vw;
         object-fit: cover;
     }
+    .card-title{
+        font-size: 55px;
+    }
     .card-title1{
+        font-size: 55px;
+    }
+    .card-title3{
         font-size: 35px;
     }
     .card-title2{
-        font-size: 45px;
+        font-size: 55px;
+    }
+    .card-title4{
+        font-size: 55px;
+    }
+    .setPositonPhone{
+        text-align: center;
+        margin: 0;
+    }
+    .setImgFooter{
+        text-align: center;
+    }
+    .settextfooter{
+        text-align: center;
     }
 }

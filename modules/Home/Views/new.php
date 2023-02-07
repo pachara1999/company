@@ -8,16 +8,16 @@
     <div class="card card-inverse border-0 text-center" style="height: fit-content; ">
         <img class="card-img-top3" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
         <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white; padding-bottom: 50px;">
-            <h1 class="card-title1 m-0"><?= $content_blog1['title'] ?></h1>
+            <h1 class="card-title1 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 600; font-style: normal;"><?= $content_blog1['title'] ?></h1>
         </div>
     </div>
 </div>
 
 <div class="py-5">
     <div class="text-center">
-        <h1>
+        <h2 class="SetFontProxima" style="color:rgba(23,23,23,.8); font-weight: 400;font-style: normal;font-size: 28px;">
             <?= $content_blog2['title'] ?>
-        </h1>
+        </h2>
     </div>
     <div class="container py-3">
         <div class="border-top-3 border border-muted" style="width: 100%;">
@@ -35,7 +35,7 @@
                                                                             } ?>">
                     <div class="py-2">
                         <div style="border-bottom: 1px solid black;">
-                            <select class="form-select" name="category_id" aria-label="Default select example">
+                            <select class="form-select SetFontProxima" style="font-size: 13px;" name="category_id" aria-label="Default select example">
                                 <option value="" selected>CATEGORY : ALL</option>
                                 <?php foreach ($categories as $category) { ?>
                                     <option value="<?= $category['id'] ?>" <?php if (!empty($_GET['category_id'])) {
@@ -49,7 +49,7 @@
                     </div>
                     <div class="py-2">
                         <div style="border-bottom: 1px solid black;">
-                            <select class="form-select" name="year" aria-label="Default select example">
+                            <select class="form-select SetFontProxima" style="font-size: 13px;" name="year" aria-label="Default select example">
                                 <option value="" selected>YEAR : ALL</option>
                                 <?php
                                 $year = date('Y');
@@ -68,7 +68,7 @@
                         <!-- <button type="submit"><i class="bi bi-search"></i></button> -->
 
                         <div class="d-flex">
-                            <input class="form-control me-1" type="text" placeholder="Search" name="title" aria-label="Search" value="<?= (!empty($_GET['title']) ? $_GET['title'] : "") ?>">
+                            <input class="form-control me-1 SetFontProxima" style="font-size: 13px;" type="text" placeholder="Search" name="title" aria-label="Search" value="<?= (!empty($_GET['title']) ? $_GET['title'] : "") ?>">
                             <button class=" btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
                         </div>
                     </div>
@@ -83,10 +83,10 @@
                                 <div class="setPositionIMGnew mx-auto">
                                     <img src="<?php echo base_url('public/asset/img/news/' . $new['image_path']); ?>" alt="">
                                 </div>
-                                <h5>
+                                <h5 class="SetFontProxima" style="font-weight: 400;font-style: normal;color:rgba(23,23,23,.8);">
                                     <?= $new['title'] ?>
                                 </h5>
-                                <p style="font-size: 12px;">
+                                <p class="SetFontProxima" style="font-size: 12px; font-weight: 400;font-style: normal;color:rgba(23,23,23,.8);">
                                     <?= $new['create_at'] ?>
                                 </p>
                             </a>
@@ -95,11 +95,11 @@
                 </div>
                 <div class="py-5 ">
                     <div class="text-center">
-                        <button type="button" class="btn border border-success border-2 text-success my-2" onclick="LoadMoreContent()">
+                        <button type="button" class="btn border border-success border-2 text-success my-2 setPositionIMGnew" onclick="LoadMoreContent()">
                             LOAD MORE...
                         </button>
                     </div>
-                    <p class="py-4 px-auto">
+                    <p class="py-4 px-auto setPositionIMGnew" style="color:rgba(23,23,23,.8);">
                         For older news, please filter by year using the filters above
                     </p>
                 </div>
