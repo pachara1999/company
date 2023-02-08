@@ -53,7 +53,7 @@
                                                                         </div>
                                                                         <div class="col-md-12">
                                                                             <label>รายละเอียด</label>
-                                                                            <textarea name="description" id="" cols="30" rows="10" class="form-control ckeditor"><?= $row['description'] ?></textarea>
+                                                                            <textarea name="description" id="" cols="30" rows="10" class="form-control <?= ($row['page'] == 'contact' && $row['name'] == 'blog_3') ? '' : 'ckeditor' ?>"><?= $row['description'] ?></textarea>
                                                                         </div>
                                                                     </div>
 
@@ -85,6 +85,7 @@
 <script>
     $(document).ready(function() {
         CKEDITOR.replaceClass = 'ckeditor';
+        CKEDITOR.config.autoParagraph = false;
 
         $('#content-tbl').DataTable({
             "ordering": false,
