@@ -81,7 +81,7 @@
                         <?= session()->get('cpr_ft.name') ?>
                     </p>
                 </div>
-                <div class="col-6 text-sm-center text-md-center text-lg-start col-sm-12 col-md-5 col-lg-5">
+                <div class="text-sm-center text-md-center text-lg-start col-sm-12 col-md-5 col-lg-5">
                     <p>
                         <!-- website by Chase e-Design -->
                         <?= session()->get('credit_ft.name') ?>

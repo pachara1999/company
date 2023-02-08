@@ -31,7 +31,7 @@ class Home extends BaseController
             'cpr_ft' => $data['footer_copyright'],
             'contact_ft' => $data['footer_contact'],
             'credit_ft' => $data['footer_credit']
-        ] ;
+        ];
         session()->set($footer);
 
         $data['content_blog1'] = $HomeModel->getContent('home', 'blog_1');
@@ -124,7 +124,8 @@ class Home extends BaseController
         return view('Modules\Home\Views\contact', $data);
     }
 
-    public function addContact(){
+    public function addContact()
+    {
         $ContactModel = new ContactModel;
         $input = $this->request->getPost();
         $ContactModel->addContact($input);

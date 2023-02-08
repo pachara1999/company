@@ -40,7 +40,7 @@
     <div class="card card-inverse border-0 text-center" style="width: 100%">
         <img class="img-fluid card-img-top2 thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog3['image_path']); ?>" alt="">
         <div class="card-img-overlay h-100 d-flex flex-column justify-content-center" style="color: black;">
-            <h1 class="card-title SetFontProxima" style="font-size: 84px; color: #7cbf4f;"><?= $content_blog3['title'] ?></h1>
+            <h1 class="card-title2 SetFontProxima" style=" color: #7cbf4f;"><?= $content_blog3['title'] ?></h1>
         </div>
         </section>
     </div>
@@ -89,7 +89,7 @@
         <div class="card card-inverse border-0 text-center" style="width: 100%">
             <img class="card-img-top2 thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog5['image_path']); ?>" alt="">
             <div class="card-img-overlay h-100 d-flex flex-column justify-content-center" style="color: black;">
-                <h1 class="card-title SetFontProxima" style="font-size: 84px; font-weight: 700; color: #7cbf4f;"><?= $content_blog5['title'] ?></h1>
+                <h1 class="card-title SetFontProxima" style="font-weight: 700; color: #7cbf4f;"><?= $content_blog5['title'] ?></h1>
             </div>
         </div>
         </section>
@@ -124,7 +124,7 @@
             <div class="card card-inverse border-0 text-center" style="width: 100%">
                 <img class="card-img-top2 thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog6['image_path']); ?>" alt="">
                 <div class="card-img-overlay h-100 d-flex flex-column justify-content-center" style="color: black;">
-                    <h1 class="card-title SetFontProxima" style="font-size: 84px; font-weight: 700; color: #7cbf4f;"><?= $content_blog6['title'] ?></h1>
+                    <h1 class="card-title SetFontProxima" style=" font-weight: 700; color: #7cbf4f;"><?= $content_blog6['title'] ?></h1>
                 </div>
             </div>
             </section>
@@ -173,7 +173,7 @@
                     </h3>
                 </div>
                 <div class="row m-0">
-                    <div class=" text-center col-sm-12 col-md-12 col-lg-4 SetFontProxima" style="color: rgba(23,23,23,.8); font-weight: 400;font-style: normal;font-size: 16px;">
+                    <div class="pb-4 text-center col-sm-12 col-md-12 col-lg-4 SetFontProxima" style="color: rgba(23,23,23,.8); font-weight: 400;font-style: normal;font-size: 16px;">
                         <img src="<?php echo base_url('public/asset/img/content/' . $content_blog8['image_path']); ?>" alt="" width="250" height="250">
                     </div>
                     <div class=" col-sm-12 col-md-12 col-lg-7 SetFontProxima" style="color: rgba(23,23,23,.8); font-weight: 400;font-style: normal;font-size: 16px;">
@@ -183,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container py-5">
                 <div class="border-top-3 border border-muted" style="width: 100%;">
                 </div>
             </div>
