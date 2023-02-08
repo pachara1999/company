@@ -122,6 +122,7 @@ class Home extends BaseController
         $HomeModel = new HomeModel();
         $data['content_blog1'] = $HomeModel->getContent('contact', 'blog_1');
         $data['content_blog2'] = $HomeModel->getContent('contact', 'blog_2');
+        $data['content_blog3'] = $HomeModel->getContent('contact', 'blog_3');
         return view('Modules\Home\Views\contact', $data);
     }
 
