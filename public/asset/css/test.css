@@ -121,6 +121,13 @@
     object-fit: cover;
     background-color: black;
 }
+.card-img-top99 {
+    width: 100%;
+    height: 45vw;
+    object-fit: cover;
+    background-color: black;
+}
+
 .card-img-top4 {
     border-radius: 0;
     width: 100%;

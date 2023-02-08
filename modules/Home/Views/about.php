@@ -15,7 +15,6 @@
             </h1>
         </div>
     </div>
-    </section>
 
 
     <div class="container">

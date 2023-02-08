@@ -6,12 +6,13 @@
 <script src="<?php echo base_url('public/asset/js/parallax.min.js') ?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 
-<div class="parallax-container">
-    <img class="img-fluid thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']); ?>" alt="">
-    <div class="teaser">
-        <div class="content">
-            <h1 class="card-title2 SetFontProxima" style=" font-weight: 700; color:#7cbf4f"><?= $content_blog1['title'] ?></h1>
-            <p class="card-text SetFontProxima" style="font-size: 20px; font-weight: 300;"><?= $content_blog1['description'] ?></p>
+<div class="container-fluid p-0 overflow-hidden">
+    <div class="card card-inverse border-0 text-center" style="height: fit-content; background-color: black;">
+        <img class="card-img-top99 img-fluid thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
+        <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white;">
+            <h1 class="card-title1 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 500; font-style: normal;">
+                <?= $content_blog1['title'] ?>
+            </h1>
         </div>
     </div>
 </div>
