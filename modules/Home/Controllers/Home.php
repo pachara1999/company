@@ -8,6 +8,7 @@ use Modules\Admin\Models\PortfolioModel;
 use Modules\Admin\Models\NewsModel;
 use Modules\Home\Models\HomeModel;
 use Modules\Home\Models\ContactModel;
+use Modules\Home\Models\PulsecheckModel;
 
 
 class Home extends BaseController
@@ -138,5 +139,12 @@ class Home extends BaseController
         $data['content_blog1'] = $HomeModel->getContent('project', 'blog_1');
         $data['content_blog2'] = $HomeModel->getContent('project', 'blog_2');
         return view('Modules\Home\Views\pulsecheck', $data);
+    }
+
+    public function addPulsecheck(){
+        $PulsecheckModel = new PulsecheckModel();
+        $input = $this->request->getPost();
+        $PulsecheckModel->addPulsecheck($input);
+        return redirect()->to(base_url('/'));
     }
 }

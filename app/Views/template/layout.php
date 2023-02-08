@@ -73,6 +73,12 @@
             <span class="nav-link-text ms-1">Contact</span>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link <?= uri_string() == 'pulsecheck' ? 'active' : '' ?>" href="<?php echo base_url('admin/pulsecheck/'); ?>">
+            <i class="fa-solid fa-diagram-project text-primary"></i>
+            <span class="nav-link-text ms-1">Project Pulsecheck</span>
+          </a>
+        </li>
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">ระบบ</h6>
         </li>

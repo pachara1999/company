@@ -5,6 +5,7 @@ namespace Modules\Admin\Controllers;
 use App\Controllers\BaseController;
 use Modules\Home\Models\HomeModel;
 use Modules\Home\Models\ContactModel;
+use Modules\Home\Models\PulsecheckModel;
 
 
 class Admin extends BaseController
@@ -113,6 +114,22 @@ class Admin extends BaseController
         
         $ContactModel = new ContactModel();
         $result = $ContactModel->deleteContact($input['id']);
+
+        return $this->response->setJSON($result);
+    }
+
+    // Pulse Check
+    public function pulsecheck_index(){
+        $PulsecheckModel = new PulseCheckModel();
+        $data['pulsechecks'] = $PulsecheckModel->getPulsecheck();
+        return view('Modules\Admin\Views\pulsecheck', $data);
+    }
+
+    public function deletePulsecheck(){
+        $input = $this->request->getPost();
+        
+        $PulsecheckModel = new PulseCheckModel();
+        $result = $PulsecheckModel->deletePulsecheck($input['id']);
 
         return $this->response->setJSON($result);
     }
