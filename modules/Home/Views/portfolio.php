@@ -10,34 +10,34 @@
             <h1 class="card-title1 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 600; font-style: normal;"><?= $content_blog1['title'] ?></h1>
         </div>
     </div>
-</section>
+    </section>
 
 
 
-<div class="container">
-    <div class="text-center py-5 SetFontLoTo">
-        <h1 style="font-weight: 400;font-style: normal;font-size: 28px;"><?= $content_blog2['title'] ?></h1>
+    <div class="container">
+        <div class="text-center py-5 SetFontLoTo">
+            <h1 style="font-weight: 400;font-style: normal;font-size: 28px;"><?= $content_blog2['title'] ?></h1>
+        </div>
+        <div class="row">
+            <?php foreach ($portfolios as $portfolio) { ?>
+                <div class="setPositionIMG  text-center py-1 col-sm-12 col-lg-3 col-md-6">
+                    <a href="<?= $portfolio['link'] ?>" target="_blank">
+                        <img src="<?php echo base_url('public/asset/img/portfolio/' . $portfolio['image_path']) ?>" alt="<?php echo $portfolio['name'] ?>">
+                    </a>
+                </div>
+            <?php } ?>
+        </div>
+        <!-- <div class="container border-top-3 border border-muted my-3" style="width: 800px;"></div> -->
     </div>
-    <div class="row">
-        <?php foreach ($portfolios as $portfolio) { ?>
-            <div class="setPositionIMG  text-center py-1 col-sm-12 col-lg-3 col-md-6">
-                <a href="<?= $portfolio['link'] ?>" target="_blank">
-                    <img src="<?php echo base_url('public/asset/img/portfolio/' . $portfolio['image_path']) ?>" alt="<?php echo $portfolio['name'] ?>">
-                </a>
-            </div>
-        <?php } ?>
-    </div>
-    <!-- <div class="container border-top-3 border border-muted my-3" style="width: 800px;"></div> -->
-</div>
-<script>
-    var image = document.getElementsByClassName('thumbnail');
-    new simpleParallax(image, {
-        sscale: 1,
-        orientation: 'down',
-    });
-</script>
-<?php $this->endSection() ?>
+    <script>
+        var image = document.getElementsByClassName('thumbnail');
+        new simpleParallax(image, {
+            scale: 1,
+            orientation: 'down',
+        });
+    </script>
+    <?php $this->endSection() ?>
 
-<?php $this->section('scripts') ?>
+    <?php $this->section('scripts') ?>
 
-<?php $this->endSection() ?>
+    <?php $this->endSection() ?>

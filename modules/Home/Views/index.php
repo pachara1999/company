@@ -22,8 +22,8 @@
             font-size: 28px;">
                 <?= $content_blog2['title'] ?>
             </div>
-            <div class="col-sm-12 col-md-8 py-2 SetFontProxima" style="font-size: 20px; font-weight: 200; color: #222;">
-                <div class="row py-3">
+            <div class="col-sm-12 col-md-8 py-2 " style="font-size: 20px; font-weight: 200; color: #222;">
+                <div class="row py-3 SetFontProxima">
                     <?= $content_blog2['description'] ?>
                 </div>
             </div>
@@ -201,7 +201,7 @@
         <script>
             var image = document.getElementsByClassName('thumbnail');
             new simpleParallax(image, {
-                sscale: 1,
+                scale: 1,
                 orientation: 'down',
                 delay: 0.8
             });

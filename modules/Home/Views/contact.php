@@ -12,9 +12,6 @@
         </div>
     </div>
     </section>
-
-
-
     <div>
         <div class="py-4">
             <h1 class="text-center SetFontProxima" style="font-weight: 400;font-style: normal;font-size: 28px; color: rgba(23,23,23,.8);">
@@ -74,7 +71,7 @@
     <script>
         var image = document.getElementsByClassName('thumbnail');
         new simpleParallax(image, {
-            sscale: 1,
+            scale: 1,
             orientation: 'down',
         });
     </script>

@@ -5,7 +5,7 @@
 
 <div class="container">
     <div class="py-5">
-        <h1 class="text-center">
+        <h1 class="text-center SetFontProxima">
             <?= $employee['name'] ?>
         </h1>
         <div class="row py-5">
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="col-7 col-sm-12 col-md-12 col-lg-7 text-sm-start text-md-start px-lg-2">
-                <div class="py-sm-5 py-md-4 py-lg-0">
+                <div class="py-sm-5 py-md-4 py-lg-0 SetFontProxima">
                     <?= $employee['remark'] ?>
                 </div>
             </div>
@@ -25,10 +25,10 @@
                 <div class="p-2 text-sm-center text-md-center mx-sm-auto mx-md-0 mx-lg-0">
                     <a href="<?php echo base_url('profireteam/' . $employee['id']); ?>" class="text-decoration-none text-dark">
                         <img src="<?php echo base_url('public/asset/img/employee/' . $employee['image_path']); ?>" alt="" width="232px" height="232px">
-                        <h4 class="text-center" style="font-size: 20px;">
+                        <h4 class="text-center SetFontProxima" style="font-size: 20px;">
                             <?= $employee['name'] ?>
                         </h4>
-                        <p class="text-center" style="font-size: 13px;">
+                        <p class="text-center SetFontProxima" style="font-size: 13px;">
                             <?= $employee['position'] ?>
                         </p>
                     </a>

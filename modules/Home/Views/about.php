@@ -10,7 +10,9 @@
     <div class="card card-inverse border-0 text-center" style="height: fit-content; background-color: black;">
         <img class="card-img-top3 img-fluid thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
         <div class="card-img-overlay d-flex flex-column justify-content-end" style="color: white;">
-            <h1 class="card-title1 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 500; font-style: normal;"><?= $content_blog1['title'] ?></h1>
+            <h1 class="card-title1 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 500; font-style: normal;">
+                <?= $content_blog1['title'] ?>
+            </h1>
         </div>
     </div>
     </section>
@@ -54,7 +56,7 @@
         <script>
             var image = document.getElementsByClassName('thumbnail');
             new simpleParallax(image, {
-                sscale: 1,
+                scale: 1,
                 orientation: 'down',
             });
         </script>

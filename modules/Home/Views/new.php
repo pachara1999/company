@@ -120,7 +120,7 @@
     <script>
         var image = document.getElementsByClassName('thumbnail');
         new simpleParallax(image, {
-            sscale: 1,
+            scale: 1,
             orientation: 'down',
         });
     </script>

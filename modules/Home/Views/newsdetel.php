@@ -6,10 +6,10 @@
 
 <div class="py-5">
     <div class="text-center">
-        <h1>
+        <h1 class="SetFontProxima">
             <?= $data['title'] ?>
         </h1>
-        <p class="py-3">
+        <p class="py-3 SetFontProxima">
             <?= $data['create_at'] ?>
         </p>
     </div>
@@ -17,17 +17,17 @@
         <!-- <div class="fst-italic pb-4">
             <p>By <a href="" class="text-dark">Witney McKiernan</a> & <a href="" class="text-dark">Lily Chang,</a>HealthQuest Capital (5-minute read)</p>
         </div> -->
-        <p>
+        <p class="SetFontProxima">
             <?= $data['details'] ?>
         </p>
         <div>
-            <p>
+            <p class="SetFontProxima">
                 <?= $data['references'] ?>
             </p>
         </div>
 
         <div class="text-center py-5">
-            <a href="<?= base_url('/new') ?>" class="btn btn-secondary px-5">Back</a>
+            <a href="<?= base_url('/new') ?>" class="btn btn-secondary px-5 SetFontProxima">Back</a>
         </div>
     </div>
 </div>
