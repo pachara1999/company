@@ -35,6 +35,7 @@ $routes->get('/newsdetel/(:any)', 'Home::newsdetel/$1');
 $routes->get('/pulsecheck', 'Home::pulsecheck');
 
 $routes->post('/addContact', 'Home::addContact');
+$routes->post('/addPulsecheck', 'Home::addPulsecheck');
 
 // Auth Routes
 $routes->group('auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {
@@ -82,6 +83,10 @@ $routes->group('admin', ['namespace' => '\Modules\Admin\Controllers', 'filter' =
     // Contact
     $routes->get('contact', 'Admin::contact_index');
     $routes->post('contact/delete', 'Admin::deleteContact');
+
+    // 
+    $routes->get('pulsecheck', 'Admin::pulsecheck_index');
+    $routes->post('pulsecheck/delete', 'Admin::deletePulsecheck');
 });
 
 /*
