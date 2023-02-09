@@ -57,6 +57,7 @@
             new simpleParallax(image, {
                 sscale: 1,
                 orientation: 'down',
+                delay: 0.8
             });
         </script>
         <?php $this->endSection() ?>

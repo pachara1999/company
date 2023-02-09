@@ -50,31 +50,31 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'employee' ? 'active' : '' ?>" href="<?php echo base_url('admin/employee/'); ?>">
+          <a class="nav-link <?= uri_string() == 'admin/employee' ? 'active' : '' ?>" href="<?php echo base_url('admin/employee/'); ?>">
             <i class="fa-solid fa-people-group text-primary"></i>
             <span class="nav-link-text ms-1">พนักงาน</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'portfolio' ? 'active' : '' ?>" href="<?php echo base_url('admin/portfolio/'); ?>">
+          <a class="nav-link <?= uri_string() == 'admin/portfolio' ? 'active' : '' ?>" href="<?php echo base_url('admin/portfolio/'); ?>">
             <i class="fa-solid fa-briefcase text-primary"></i>
             <span class="nav-link-text ms-1">ผลงาน</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'news' ? 'active' : '' ?>" href="<?php echo base_url('admin/news/'); ?>">
+          <a class="nav-link <?= uri_string() == 'admin/news' ? 'active' : '' ?>" href="<?php echo base_url('admin/news/'); ?>">
             <i class="fa-sharp fa-solid fa-newspaper text-primary"></i>
             <span class="nav-link-text ms-1">ข่าวสาร</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'contact' ? 'active' : '' ?>" href="<?php echo base_url('admin/contact/'); ?>">
+          <a class="nav-link <?= uri_string() == 'admin/contact' ? 'active' : '' ?>" href="<?php echo base_url('admin/contact/'); ?>">
             <i class="fa-brands fa-telegram text-primary"></i>
             <span class="nav-link-text ms-1">Contact</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= uri_string() == 'pulsecheck' ? 'active' : '' ?>" href="<?php echo base_url('admin/pulsecheck/'); ?>">
+          <a class="nav-link <?= uri_string() == 'admin/pulsecheck' ? 'active' : '' ?>" href="<?php echo base_url('admin/pulsecheck/'); ?>">
             <i class="fa-solid fa-diagram-project text-primary"></i>
             <span class="nav-link-text ms-1">Project Pulsecheck</span>
           </a>

@@ -8,18 +8,19 @@
 
 <div class="container-fluid p-0 overflow-hidden">
     <div class="card card-inverse border-0 text-center" style="height: fit-content; background-color: black;">
-        <img class="card-img-top99 img-fluid thumbnail" id="parallax" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
-        <div class="card-img-overlay d-flex flex-column justify-content-center" style="color: white;">
-            <h1 class="card-title1 m-0 SetFontProxima" style="color:#7cbf4f; font-weight: 500; font-style: normal;">
+        <img class="card-img-top99 img-fluid thumbnail" id="parallax" style="opacity: 0.8;" src="<?php echo base_url('public/asset/img/content/' . $content_blog1['image_path']) ?>" alt="">
+        <div class="card-img-overlay d-flex flex-column justify-content-end" style="color: white; padding-bottom: 150px;">
+            <h1 class="card-title1 m-0 SetFontProxima " style="color:#7cbf4f; font-weight:700; font-style: normal;">
                 <?= $content_blog1['title'] ?>
             </h1>
+            <p class="card-text SetFontProxima " style="font-size: 45px; font-weight: 300; -webkit-text-stroke: 2px black;"><?= $content_blog1['description'] ?></p>
         </div>
     </div>
 </div>
 <div>
     <div class="container">
         <div class="row px-5 py-5">
-            <div class="SetFontLoTo  col-sm-12 col-md-4 text-sm-start text-md-center text-lg-center py-3" style="font-weight: 400;
+            <div class="SetFontLoTo  col-sm-12 col-md-4 text-sm-start text-md-center text-lg-center py-3" style="font-weight: 600;
             font-size: 28px;">
                 <?= $content_blog2['title'] ?>
             </div>
@@ -103,9 +104,9 @@
                         <div class="text-center">
                             <img src="<?php echo base_url('public/asset/img/news/' . $new['image_path']); ?>" alt="" width="220px" height="123px">
                         </div>
-                        <div class="px-4 py-2 px-lg-5 px-md-0 px-sm-0">
+                        <div class="py-2 px-lg-5 px-md-0 px-sm-0">
                             <div class="text-md-center text-lg-start setPositonPhone">
-                                <p style="font-size:14px; font-weight: 400;font-style: normal; color: rgba(23,23,23,.8);" class="m-0 SetFontProxima"><?= $new['title'] ?></p>
+                                <p style="font-size:11px; font-weight: 400;font-style: normal; color: rgba(23,23,23,.8);" class="m-0 SetFontProxima"><?= $new['title'] ?></p>
                                 <a href="<?= base_url('newsdetel/' . $new['id']) ?>" class="text-decoration-none text-black" style="font-size:14px; font-weight: 400;font-style: normal; color: rgba(23,23,23,.8);">Read More</a>
                                 <p style="font-size: 13px; color: gray;" class="pt-1"><?= $new['create_at'] ?></p>
                             </div>

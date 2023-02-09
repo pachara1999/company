@@ -131,7 +131,7 @@ class Home extends BaseController
         $ContactModel = new ContactModel;
         $input = $this->request->getPost();
         $ContactModel->addContact($input);
-        return redirect()->to(base_url('/'));
+        return redirect()->to(base_url('/contact'));
     }
 
     public function pulsecheck()
@@ -142,10 +142,11 @@ class Home extends BaseController
         return view('Modules\Home\Views\pulsecheck', $data);
     }
 
-    public function addPulsecheck(){
+    public function addPulsecheck()
+    {
         $PulsecheckModel = new PulsecheckModel();
         $input = $this->request->getPost();
         $PulsecheckModel->addPulsecheck($input);
-        return redirect()->to(base_url('/'));
+        return redirect()->to(base_url('/pulsecheck'));
     }
 }

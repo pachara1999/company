@@ -39,7 +39,8 @@
                 <ul class="navbar-nav">
                     <?php foreach (session()->get('menubar') as $menubar) { ?>
                         <li class="nav-item text-md-start text-sm-start text-lg-start py-2 ">
-                            <a href="<?php echo base_url($menubar['link']) ?>" style="font-size: 16px; font-weight: 700;" class="text-uppercase nav-link text-while font-weight-bold  SetFontFutura p-0 mx-md-1 mx-lg-4 mx-sm-1">
+                            <a href="<?php echo base_url($menubar['link']) ?>" style="font-size: 16px; font-weight: 700;" class=" 
+                            <?= uri_string() == str_replace('/', '', $menubar['link']) ? 'active' : '' ?> text-uppercase nav-link text-while font-weight-bold  SetFontFutura p-0 mx-md-1 mx-lg-4 mx-sm-1">
                                 <?= $menubar['name'] ?>
                             </a>
                         </li>
@@ -53,8 +54,6 @@
         <!-- <img src="https://wallpaperaccess.com/full/741760.jpg" alt="" width="100%"> -->
     </div>
 
-
-
     <?php $this->renderSection('content'); ?>
     <div class="container-fluid bg-black">
         <div class="container">
@@ -64,7 +63,7 @@
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 text-sm-start text-md-start text-lg-start py-2 m-0 text-center mt-md-4">
                     <div>
-                        <p style="color: white; font-size: 16px;">
+                        <p class="SetFontFutura" style="color: white; font-size: 16px;">
                             <?= session()->get('contact_ft.name') ?>
                         </p>
                     </div>
@@ -76,13 +75,13 @@
             </div>
             <div class="row " style="color: white;">
                 <div class="text-sm-center text-md-start text-lg-start col-sm-12 col-md-7 col-lg-7 pt-2">
-                    <p>
+                    <p class="SetFontFutura">
                         <!-- Copyrights © 2021 | HealthQuest Capital | All rights reserved -->
                         <?= session()->get('cpr_ft.name') ?>
                     </p>
                 </div>
                 <div class="text-sm-center text-md-center text-lg-start col-sm-12 col-md-5 col-lg-5">
-                    <p>
+                    <p class="SetFontFutura">
                         <!-- website by Chase e-Design -->
                         <?= session()->get('credit_ft.name') ?>
                     </p>
